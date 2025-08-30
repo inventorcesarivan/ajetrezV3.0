@@ -4469,6 +4469,46 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
 }
 </style>
 
+
+<style id="ajetrez-2025-08-30-fixes-10">
+/* === FIX 2025-08-30 (bajar medio casillero los botones Reiniciar y Pantalla completa) === */
+#btnResetVisible, #btnFullscreen{
+  position: relative !important;
+  top: calc(0.5 * var(--square)) !important;
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-11">
+/* === FIX 2025-08-30 (normalizar desplazamiento botones inferiores) ===
+   Objetivo: evitar acumulación de transform/translate y asegurar
+   un desplazamiento EXACTO de +0.5 casillero hacia abajo.
+*/
+#btnResetVisible, #btnFullscreen{
+  position: relative !important;
+  /* Neutralizar cualquier desplazamiento previo por transform */
+  transform: none !important;
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  /* Asegurar que top anterior no se sume en media queries */
+  top: calc(0.5 * var(--square)) !important;
+  margin-top: 0 !important;
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-12">
+/* === FIX 2025-08-30 (subir medio casillero los botones inferiores) === */
+#btnResetVisible, #btnFullscreen{
+  position: relative !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  top: calc(-0.5 * var(--square)) !important;
+  margin-top: 0 !important;
+}
+</style>
+
 </body>
 
 <style id="base-container-shrink-down-0_5square-2025-08-29">
