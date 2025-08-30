@@ -1772,6 +1772,52 @@ function playSfx(kind){
 }
 </style>
 
+
+<style id="ajetrez-2025-08-30-fixes">
+/* === FIX 2025-08-30: Pedido del usuario ===
+   1) Mover medio casillero a la IZQUIERDA los botones "Reiniciar" y "Ver en pantalla completa"
+   2) Subir 2 casilleros la barra de colaboración (texto + botones)
+   Reglas se aplican en WEB y MÓVIL, con !important para prevalecer sobre estilos previos.
+*/
+
+/* 1) Reiniciar / Pantalla completa: -0.5 casillero en X */
+#btnResetVisible, #btnFullscreen{
+  position: relative !important;
+  left: calc(-0.5 * var(--square)) !important;
+  /* No tocar Y aquí para no interferir con otros ajustes verticales existentes */
+}
+
+/* 2) Barra de donaciones + indicador: subir 2 casilleros */
+#donateBar{
+  position: relative !important;
+  top: calc(-2 * var(--square)) !important;
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-2">
+/* === FIX 2025-08-30 (segunda modificación) ===
+   Subir TODOS los botones inferiores + indicador 1 casillero adicional
+*/
+#btnResetVisible, #btnFullscreen, #donateBar, #btnDonate, #btnPaypal, #btnMpago{
+  position: relative !important;
+  top: calc(-1 * var(--square)) !important;
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-3">
+/* === FIX 2025-08-30 (tercera modificación) ===
+   Colocar menú de funciones fijo dentro del tablero, arriba a la izquierda (web y móvil)
+*/
+#menuFunciones {
+  position: absolute !important;
+  top: 3mm !important;
+  left: 3mm !important;
+  z-index: 2000 !important;
+}
+</style>
+
 </head>
 <script>const PIECE_SPRITES = {
   "b_R": "assets/piezas_aa/b_R.png",
@@ -4318,6 +4364,101 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
 
 })();</script>
 
+
+
+<style id="ajetrez-2025-08-30-fixes-4">
+/* === FIX 2025-08-30 (menu dentro del tablero, visible también en fullscreen) === */
+#board{ position: relative !important; }
+
+/* Contenedor del menú fijado adentro del tablero */
+#menuContainer{
+  position: absolute !important;
+  top: calc(0.5 * var(--square)) !important;
+  left: calc(0.5 * var(--square)) !important;
+  z-index: 3000 !important;
+  pointer-events: auto !important;
+  display: block !important;
+}
+
+/* Asegurar que el botón no quede tapado por overlays */
+#menuToggle{ position: relative; z-index: 3001; }
+
+/* En modo fullscreen, mantenerlo visible sin cambios */
+:fullscreen #menuContainer,
+:-webkit-full-screen #menuContainer{
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 3000 !important;
+}
+</style>
+
+<script id="ajetrez-2025-08-30-fixes-4-js">
+(function(){
+  function moveMenuIntoBoard(){
+    try{
+      var board = document.getElementById('board');
+      var menu = document.getElementById('menuContainer');
+      if(board && menu && menu.parentNode !== board){
+        board.insertBefore(menu, board.firstChild);
+      }
+    }catch(e){ /* noop */ }
+  }
+
+  // Run on DOM ready
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', moveMenuIntoBoard);
+  }else{
+    moveMenuIntoBoard();
+  }
+
+  // Re-affirm on fullscreen changes (some UIs reparent or restyle elements)
+  ['fullscreenchange','webkitfullscreenchange','mozfullscreenchange','MSFullscreenChange','resize'].forEach(function(ev){
+    document.addEventListener(ev, function(){
+      moveMenuIntoBoard();
+      // Ensure it's on top after any dynamic layering
+      var menu = document.getElementById('menuContainer');
+      if(menu){ menu.style.zIndex = '3000'; }
+    });
+  });
+})();
+</script>
+
+
+<style id="ajetrez-2025-08-30-fixes-5">
+/* === FIX 2025-08-30 (ajuste de menú: subir 1 casillero y mover 1 casillero a la derecha) === */
+#menuContainer{
+  top: calc(-0.5 * var(--square)) !important; /* antes 0.5 abajo => ahora 1 más arriba = -0.5 */
+  left: calc(1.5 * var(--square)) !important; /* antes 0.5 => ahora 1 más a la derecha = 1.5 */
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-6">
+/* === FIX 2025-08-30 (ajuste fino del menú: +0.5 casillero arriba y +0.5 derecha adicionales) === */
+#menuContainer{
+  top: calc(-1 * var(--square)) !important;    /* antes -0.5 => ahora -1 */
+  left: calc(2 * var(--square)) !important;   /* antes 1.5 => ahora 2 */
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-7">
+/* === FIX 2025-08-30 (subir botones e indicador de colaboración 1 casillero) === */
+#donateBar, #colaboraBtn, #donarMercadoPago, #donarPaypal, #btnDonate, #btnPaypal, #btnMpago{
+  position: relative !important;
+  top: calc(-1 * var(--square)) !important;
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-8">
+/* === FIX 2025-08-30 (ajuste específico PayPal) === */
+#donarPayPal{
+  position: relative !important;
+  top: calc(-1 * var(--square)) !important;
+}
+</style>
 
 </body>
 
