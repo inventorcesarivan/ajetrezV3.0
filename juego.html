@@ -4460,6 +4460,15 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
 }
 </style>
 
+
+<style id="ajetrez-2025-08-30-fixes-9">
+/* === FIX 2025-08-30 (subir medio casillero extra a botones de donación e indicador) === */
+#donateBar, #colaboraBtn, #donarMercadoPago, #donarPayPal{
+  position: relative !important;
+  top: calc(-1.5 * var(--square)) !important; /* total = 1.5 casilleros arriba */
+}
+</style>
+
 </body>
 
 <style id="base-container-shrink-down-0_5square-2025-08-29">
