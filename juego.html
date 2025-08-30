@@ -67,7 +67,6 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   border:none; background:transparent; font-size:18px; cursor:pointer;
 }
 
-
 #instructivoToggle .btn{
   border-radius:12px; padding:6px 10px; border:1px solid rgba(0,0,0,.1);
   background:#111827; color:#fff; cursor:pointer; font-weight:700; font-size:14px;
@@ -132,14 +131,12 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   }
 }
 
-
 /* === SOLO MÓVIL: bajar medio casillero los botones de mantener/desplazar sección === */
 @media (max-width: 699px){
   #rowControls {
     margin-top: 10px !important;
   }
 }
-
 
 /* === SOLO MÓVIL: bajar 1 casillero (~20px) el cartel rojo (banner) === */
 @media (max-width: 699px){
@@ -148,14 +145,12 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   }
 }
 
-
 /* === SOLO WEB: subir 1 casillero los botones de mantener/desplazar sección === */
 @media (min-width:981px){
   #rowControls{
     top: calc(23px - var(--square)) !important;
   }
 }
-
 
 /* === NO FLOTANTE para el cartel rojo de regla (web y móvil) === */
 #rule-toast.toast{
@@ -171,18 +166,15 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
 /* Contenedor centra el cartel dentro del marco */
 .frame #rule-toast.toast{ display:none; } /* por defecto oculto; se muestra vía JS */
 
-
 /* === Subir medio casillero los botones de mantener/desplazar sección (web y móvil) === */
 #rowControls{
   margin-top: calc(-0.5 * var(--square)) !important;
 }
 
-
 /* === Subir 4 casilleros el cartel emergente de advertencia (rule-toast) === */
 #rule-toast.toast{
   margin-top: calc(-4 * var(--square)) !important;
 }
-
 
 /* === Superponer el cartel de advertencia por encima de todo === */
 #rule-toast.toast{
@@ -194,12 +186,10 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   margin-top: 0 !important;
 }
 
-
 /* === Desplazar 1 casillero hacia abajo el cartel de advertencia === */
 #rule-toast.toast{
   top: calc(10% + var(--square)) !important;
 }
-
 
 /* === SOLO MÓVIL: desplazar 1 casillero hacia abajo el botón de mantener/desplazar sección === */
 @media (max-width:699px){
@@ -208,14 +198,12 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   }
 }
 
-
 /* === SOLO MÓVIL: desplazar 4 casilleros a la derecha el botón de mantener/desplazar sección === */
 @media (max-width:699px){
   #rowControls{
     margin-left: calc(var(--square) * 4) !important;
   }
 }
-
 
 /* === SOLO MÓVIL: desplazar 1 casillero hacia abajo el botón de modo (Estás en modo / Cambiar de modo) === */
 @media (max-width:699px){
@@ -224,14 +212,12 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   }
 }
 
-
 /* === WEB y MÓVIL: enviar el botón de modo (Estás en modo / Cambiar de modo) a la derecha === */
 .toolbar .mode-inline{
   margin-left: auto !important;
   margin-right: 0 !important;
   justify-content: flex-end !important;
 }
-
 
 /* === Ajustes de posición === */
 
@@ -245,113 +231,85 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   top: calc(23px - 0.5 * var(--square)) !important;
 }
 
-
 /* === Bajar 2mm el botón de Reiniciar === */
 #btnResetVisible{
   position: relative;
   top: 2mm !important;
 }
 
-
 /* === Bajar 2mm también el botón de Ver en pantalla completa === */
 #btnFullscreen{
   position: relative;
   top: 2mm !important;
 }
-
 </style>
 <style>
 /* 20% más chico el panel del instructivo */
-
 </style><style>
 /* 5% más chico adicional y desplazar 2 casilleros a la derecha */
 
 @media (max-width:980px){
   /* En móvil mantener margen estándar para no recortar */
   
-}
-</style><style>
+}</style><style>
 /* 5% más chico adicional y subir 3 casilleros desde el borde inferior */
 
 @media (max-width:980px){
   
-}
-</style><style>
+}</style><style>
 /* -5% tamaño adicional y tipografía -5% con negrita */
 
-#instructivoPanel h3{ font-weight: 800 !important; }
-</style><style>
+#instructivoPanel h3{ font-weight: 800 !important; }</style><style>
 /* Ajuste adicional: -10% tipografía y -5% recuadro del instructivo */
 
-#instructivoPanel h3{ font-weight: 800 !important; }
-</style><style>
+#instructivoPanel h3{ font-weight: 800 !important; }</style><style>
 /* Quitar negrita del texto del instructivo, mantenerla en el título */
 
 #instructivoPanel h3{ font-weight: 800 !important; }
 #instructivoPanel p, #instructivoPanel li, #instructivoPanel ol, #instructivoPanel ul, #instructivoPanel span, #instructivoPanel div{
   font-weight: 400 !important;
-}
-</style><style>
+}</style><style>
 /* Desplazar el instructivo 0.5 casillero a la derecha y 0.5 casillero hacia abajo */
-
 </style><style>
 /* Separar los botones superiores 0.5 casillero del borde derecho */
 #floatingControls{
   right: calc(12px + var(--square) * 0.5) !important;
-}
-</style><style>
+}</style><style>
 /* Mover los botones superiores 0.5 casillero a la derecha (volver a 12px del borde) */
 #floatingControls{
   right: 12px !important;
-}
-</style><style>
+}</style><style>
 /* Desplazar el instructivo 0.5 casillero a la derecha (ahora 3 casilleros desde el borde izquierdo) */
-
 </style><style>
 /* Reducir la altura del instructivo medio casillero */
-
 </style><style>
 /* Aumentar el ancho del instructivo medio casillero */
-
 </style><style>
 /* Desplazar el instructivo 0.5 casillero a la izquierda */
-
 </style><style>
 /* -5% tamaño del panel y mantener el offset de 0.5 casillero; re-aplicar left 2.5 casilleros */
-
 </style><style>
 /* +0.5 casillero a la derecha y +0.5 hacia arriba; tipografía -5% adicional */
-
 </style><style>
 /* Desplazar el instructivo 0.5 casillero a la izquierda (ahora 2.5 casilleros desde la izquierda) */
-
 </style><style>
 /* -5% adicional del recuadro del instructivo (manteniendo desplazamientos actuales) */
-
 </style><style>
 /* Achicar altura 0.5 casillero extra y desplazar 0.5 casillero a la derecha */
-
 </style><style>
 /* Bajar el instructivo 3mm y reducir tipografía un 10% (80% → 72%) */
-
 </style><style>
 /* Subir el instructivo medio casillero (sumar 0.5 * var(--square) al bottom actual) */
-
 </style><style>
 /* Subir el instructivo 3mm (eliminar el -3mm previo) */
-
 </style><style>
 /* Bajar el instructivo medio casillero */
-
 </style><style>
 /* +3% tamaño del recuadro del instructivo (ancho y alto) */
-
 </style><style>
 /* Microajuste: interlineado 1.18 para el instructivo */
-
 </style><style>
 /* Bajar 3mm, desplazar 3mm a la izquierda, y reducir tipografía 5% */
-
 </style><style>
 /* Ajustes finos:
    - #rowControls baja 0.5 casillero
@@ -359,7 +317,6 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
 #rowControls{
   top: calc(23px + var(--square) * 0.5) !important;
 }
-
 </style><style>
 /* Bajar 2mm el botón 'Mostrar/Ocultar instructivo' y volver transparente el contenedor de Mantener/Desplazar */
 
@@ -368,18 +325,14 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   box-shadow: none !important;
   border: none !important;
   backdrop-filter: none !important;
-}
-</style><style>
+}</style><style>
 /* Colocar el instructivo DENTRO del tablero (#board) */
 #board{ position: relative !important; }
-
 </style><style>
 /* Subir instructivo 1 casillero dentro del tablero */
-
 </style><style>
 /* Siempre flotante en ambas vistas, manteniendo posición relativa al tablero */
 #board{ position: relative !important; overflow: visible !important; }
-
 </style>
 <style id="mobile-controls-below-css">
 @media (max-width:980px){
@@ -393,8 +346,7 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   #floatingControls .btn{
     flex: 1 1 auto;
   }
-}
-</style>
+}</style>
 <style id="toggle-der-10casilleros-mobile-only">
 /* Reubicar SOLO EN MÓVIL el botón de ocultar instructivo 10 casilleros a la derecha */
 @media (max-width:980px){
@@ -403,8 +355,7 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
 /* Asegurar que en escritorio quede como estaba (centrado con translateX(-50%)) */
 @media (min-width:981px){
   
-}
-</style>
+}</style>
 <style id="mobile-instructivo-up-half-and-shift-rowcontrols-8">
 @media (max-width:980px){
   /* Subir medio casillero el botón del instructivo */
@@ -413,21 +364,18 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   #rowControls{
     padding-left: calc(var(--square) * 8) !important;
   }
-}
-</style>
+}</style>
 <style id="mobile-board-down-1square">
 @media (max-width:980px){
   /* Desplazar hacia abajo 1 casillero el tablero */
   #board{
     margin-top: var(--square) !important;
   }
-}
-</style>
+}</style>
 <style>
 /* === Ajetrez: UI states for illegal shift === */
 .btn.blocked{background:#d33;color:#fff;border-color:#a00;cursor:not-allowed;opacity:.95}
-#rule-toast.toast{position:fixed;left:50%;top:12%;transform:translateX(-50%);background:rgba(200,0,0,.92);color:#fff;padding:10px 14px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35);font-weight:700;max-width:min(92vw,560px);text-align:center;transition:opacity .35s z-index:9999;}
-</style>
+#rule-toast.toast{position:fixed;left:50%;top:12%;transform:translateX(-50%);background:rgba(200,0,0,.92);color:#fff;padding:10px 14px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35);font-weight:700;max-width:min(92vw,560px);text-align:center;transition:opacity .35s z-index:9999;}</style>
 <style id="mode-indicator-style">
 .mode-inline{ display:inline-flex; align-items:center; gap:8px; margin-left:8px; }
 .mode-pill{
@@ -440,8 +388,7 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
 .mode-pill-current{ opacity:1; }
 @media (max-width: 640px){
   .mode-pill{ font-size:14px; }
-}
-</style>
+}</style>
 <style>
 .piece-img{
   width:100%; height:100%; display:block; pointer-events:none; user-select:none;
@@ -468,8 +415,7 @@ function playSfx(kind){
   background: #d00 !important;
   color: #fff !important;
   border-color: #a00 !important;
-}
-</style>
+}</style>
 <style id="mode-inline-stack-2025-08-28">
 /* === Colocar botón de cambiar modo DEBAJO del cartel de modo (todas las versiones) === */
 .mode-inline{
@@ -486,36 +432,31 @@ function playSfx(kind){
 .mode-inline a[role="button"]{
   order: 1 !important;
   display: inline-flex;
-}
-</style>
+}</style>
 <style id="rowcontrols-down-1square-2025-08-28">
 /* === WEB y MÓVIL: desplazar 1 casillero hacia abajo el botón Mantener/Desplazar sección === */
 #rowControls{
   top: calc(23px + (1 * var(--square))) !important;
-}
-</style>
+}</style>
 <style id="rowcontrols-down-extra1-mobile-2025-08-28">
 /* === SOLO MÓVIL: desplazar 1 casillero adicional hacia abajo el botón Mantener/Desplazar sección === */
 @media (max-width:699px){
   #rowControls{
     top: calc(23px + (2 * var(--square))) !important;
   }
-}
-</style>
+}</style>
 <style id="board-up-1square-2025-08-28">
 /* === WEB y MÓVIL: subir las secciones del tablero 1 casillero === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: calc(var(--board-top, 0px) - var(--square)) !important;
   margin-top: calc(-1 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="board-up-0_5square-2025-08-28">
 /* === WEB y MÓVIL: subir las secciones del tablero medio casillero === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: calc(var(--board-top, 0px) - 0.5 * var(--square)) !important;
   margin-top: calc(-0.5 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="mode-top-left-boardbase-2025-08-28">
 /* === Mover botón e indicador de modo a la esquina superior izquierda, al inicio de la base del tablero === */
 .mode-inline{
@@ -529,15 +470,13 @@ function playSfx(kind){
 }
 #board, #mobile-board, #mobile-board-down-1square{
   position: relative;
-}
-</style>
+}</style>
 <style id="board-down-2squares-2025-08-28">
 /* === WEB y MÓVIL: bajar el tablero 2 casilleros === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: calc(var(--board-top, 0px) + 2 * var(--square)) !important;
   margin-top: calc(2 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="mode-inline-row-2025-08-28">
 /* === Colocar botón de cambiar modo a la derecha del indicador de modo === */
 .mode-inline{
@@ -554,15 +493,13 @@ function playSfx(kind){
 .mode-inline button,
 .mode-inline .toggle-mode,
 .mode-inline .btn,
-.mode-inline a[role="button"]{ order: 1 !important; }
-</style>
+.mode-inline a[role="button"]{ order: 1 !important; }</style>
 <style id="board-up-2squares-2025-08-28">
 /* === WEB y MÓVIL: subir el tablero 2 casilleros === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: calc(var(--board-top, 0px) - 2 * var(--square)) !important;
   margin-top: calc(-2 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="revert-board-up2-and-align-mode-2025-08-28">
 /* === Revertir: tablero vuelve a BAJAR 2 casilleros === */
 #board, #mobile-board, #mobile-board-down-1square{
@@ -586,8 +523,7 @@ function playSfx(kind){
 .mode-inline button,
 .mode-inline .toggle-mode,
 .mode-inline .btn,
-.mode-inline a[role="button"]{ order: 1 !important; }
-</style>
+.mode-inline a[role="button"]{ order: 1 !important; }</style>
 <style id="mode-align-top-board-2025-08-28">
 /* === Subir indicador de modo y botón de cambio al TOPE de la base del tablero === */
 .mode-inline{
@@ -605,54 +541,46 @@ function playSfx(kind){
 .mode-inline button,
 .mode-inline .toggle-mode,
 .mode-inline .btn,
-.mode-inline a[role="button"]{ order: 1 !important; }
-</style>
+.mode-inline a[role="button"]{ order: 1 !important; }</style>
 <style id="mode-top-right-half-square-2025-08-28">
 /* === Mover indicador y botón de modo medio casillero a la derecha === */
 .mode-inline{
   left: calc(0.5 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="board-up-2squares-2025-08-28b">
 /* === WEB y MÓVIL: subir el tablero 2 casilleros === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: calc(var(--board-top, 0px) - 2 * var(--square)) !important;
   margin-top: calc(-2 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="revert-board-up2-2025-08-28c">
 /* === Revertir: tablero vuelve a su posición base (sin subida extra) === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: var(--board-top, 0px) !important;
   margin-top: 0 !important;
-}
-</style>
+}</style>
 <style id="board-down-1square-2025-08-28d">
 /* === WEB y MÓVIL: bajar el tablero 1 casillero === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: calc(var(--board-top, 0px) + 1 * var(--square)) !important;
   margin-top: calc(1 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="mode-up-2mm-2025-08-28">
 /* === Subir indicador de modo y botón unos 2mm === */
 .mode-inline{
   margin-top: -2mm !important;
-}
-</style>
+}</style>
 <style id="restart-fs-down-3mm-2025-08-28">
 /* === Bajar botones de Reiniciar y Pantalla Completa 3mm === */
 #resetBtn, #fullscreenBtn{
   margin-top: 3mm !important;
-}
-</style>
+}</style>
 <style id="board-up-0_5square-2025-08-28e">
 /* === WEB y MÓVIL: subir el tablero medio casillero === */
 #board, #mobile-board, #mobile-board-down-1square{
   top: calc(var(--board-top, 0px) - 0.5 * var(--square)) !important;
   margin-top: calc(-0.5 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="board-offset-normalizer-2025-08-28">
 /* === Normalización de desplazamiento del tablero ===
    Motivo: había múltiples reglas conflictivas con top/margin-top !important
@@ -666,8 +594,7 @@ function playSfx(kind){
   top: var(--board-top, 0px) !important;
   margin-top: 0 !important;
   transform: translateY(var(--board-offset-y)) !important;
-}
-</style>
+}</style>
 <style id="reset-fs-align-mode-2025-08-28">
 /* === Alinear botones Reiniciar y Pantalla Completa a la altura de los botones de modo === */
 :root{
@@ -679,20 +606,17 @@ function playSfx(kind){
   top: 0 !important;
   transform: translateY(var(--mode-top-offset)) !important;
   margin-top: 0 !important; /* neutraliza ajustes previos */
-}
-</style>
+}</style>
 <style id="reset-fs-extra-down-3mm-2025-08-28">
 /* === Bajar Reiniciar y Pantalla Completa 3mm más respecto a los controles de modo === */
 #resetBtn, #fullscreenBtn{
   transform: translateY(calc(var(--mode-top-offset, 0px) + 3mm)) !important;
-}
-</style>
+}</style>
 <style id="reset-fs-left-half-square-2025-08-28">
 /* === Desplazar Reiniciar y Pantalla Completa medio casillero a la izquierda === */
 #resetBtn, #fullscreenBtn{
   transform: translate(calc(-0.5 * var(--square)), calc(var(--mode-top-offset, 0px) + 3mm)) !important;
-}
-</style>
+}</style>
 <style id="fix-visible-reset-fs-2025-08-28">
 /* === Corregir target: los botones visibles son #btnResetVisible y #btnFullscreen === */
 #btnResetVisible, #btnFullscreen{
@@ -709,26 +633,22 @@ function playSfx(kind){
     top: 0 !important;
     transform: translate(calc(-0.5 * var(--square)), calc(var(--mode-top-offset, 0px) + 3mm)) !important;
   }
-}
-</style>
+}</style>
 <style id="visible-reset-fs-down-half-square-2025-08-28">
 /* === Bajar botones visibles Reiniciar y Pantalla Completa medio casillero (web y móvil) === */
 #btnResetVisible, #btnFullscreen{
   transform: translate(calc(-0.5 * var(--square)), calc(var(--mode-top-offset, 0px) + 3mm + 0.5 * var(--square))) !important;
-}
-</style>
+}</style>
 <style id="board-container-expand-down-0_5square-2025-08-28">
 /* === Ampliar la base contenedora del tablero hacia abajo medio casillero === */
 #board, #mobile-board, #mobile-board-down-1square{
   padding-bottom: calc(0.5 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="board-container-expand-down-extra0_5square-2025-08-28">
 /* === Ampliar aún más el fondo/base del tablero hacia abajo (otro medio casillero) === */
 #board, #mobile-board, #mobile-board-down-1square{
   padding-bottom: calc(1 * var(--square)) !important; /* total: 1 casillero */
-}
-</style>
+}</style>
 <style id="mobile-reset-fs-up-half-and-narrow-2025-08-28">
 /* === SOLO MÓVIL: subir medio casillero los botones Reiniciar y Pantalla Completa, y achicar ancho a la mitad === */
 @media (max-width:699px){
@@ -736,8 +656,7 @@ function playSfx(kind){
     transform: translate(calc(-0.5 * var(--square)), calc(var(--mode-top-offset, 0px) + 3mm)) !important;
     width: 50% !important;
   }
-}
-</style>
+}</style>
 <style id="mobile-reset-fs-topright-above-board-2025-08-28">
 /* === SOLO MÓVIL: enviar Reiniciar / Pantalla completa a la derecha ARRIBA del tablero, más angostos === */
 @media (max-width:699px){
@@ -765,16 +684,14 @@ function playSfx(kind){
     padding: 6px 10px !important;
     text-align: center !important;
   }
-}
-</style>
+}</style>
 <style id="mobile-reset-fs-right-half-square-2025-08-28">
 /* === SOLO MÓVIL: desplazar medio casillero más a la derecha los botones Reset/Fullscreen === */
 @media (max-width:699px){
   #floatingControls{
     right: calc(0.5 * var(--square) + 0.5 * var(--square)) !important; /* base + medio casillero extra */
   }
-}
-</style>
+}</style>
 <style id="reset-fs-floating-both-2025-08-28">
 /* === Hacer flotantes los botones Reiniciar y Pantalla Completa en web y móvil === */
 #floatingControls{
@@ -793,8 +710,7 @@ function playSfx(kind){
   min-width: 100px;
   padding: 6px 10px !important;
   text-align: center !important;
-}
-</style>
+}</style>
 <style id="reset-fs-web-left4-up1-2025-08-28">
 /* === SOLO WEB: desplazar botones Reiniciar y Fullscreen 4 casilleros a la izquierda y 1 hacia arriba === */
 @media (min-width:700px){
@@ -802,16 +718,14 @@ function playSfx(kind){
     right: calc(0.5 * var(--square) + 4 * var(--square)) !important;
     top: calc(var(--board-top, 0px) + var(--board-offset-y, 0px) - 1 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-web-left4-up1-down0_5-2025-08-28">
 /* === SOLO WEB: bajar botones flotantes medio casillero (manteniendo 4 izq, 1 arriba previos) === */
 @media (min-width:700px){
   #floatingControls{
     top: calc(var(--board-top, 0px) + var(--board-offset-y, 0px) - 1 * var(--square) + 0.5 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-halfwidth-2025-08-28">
 /* === SOLO MÓVIL: achicar ancho de los botones Reiniciar y Fullscreen a la mitad === */
 @media (max-width:699px){
@@ -820,8 +734,7 @@ function playSfx(kind){
     max-width: none !important;
     flex: 0 0 auto !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-vertical-stack-2025-08-28">
 /* === SOLO MÓVIL: colocar botones Reiniciar y Fullscreen uno debajo del otro === */
 @media (max-width:699px){
@@ -832,8 +745,7 @@ function playSfx(kind){
   #btnResetVisible, #btnFullscreen{
     width: 50% !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-down-1square-2025-08-28">
 /* === SOLO MÓVIL: bajar 1 casillero los botones Reiniciar y Pantalla Completa === */
 @media (max-width:699px){
@@ -842,8 +754,7 @@ function playSfx(kind){
   #floatingControls{
     transform: translateY(var(--square)) !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-rightmax-2025-08-28">
 /* === SOLO MÓVIL: alinear botones Reiniciar y Pantalla Completa lo más a la derecha dentro del tablero === */
 @media (max-width:699px){
@@ -853,23 +764,20 @@ function playSfx(kind){
     justify-content: flex-end !important;
     width: 100% !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-down-3squares-rightmax-2025-08-28">
 /* === SOLO MÓVIL: bajar botones Reiniciar y Pantalla Completa 2 casilleros adicionales (total 3) === */
 @media (max-width:699px){
   #floatingControls{
     transform: translateY(calc(3 * var(--square))) !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-all-left1square-2025-08-28">
 /* === WEB y MÓVIL: desplazar botones Reiniciar y Pantalla Completa 1 casillero a la izquierda === */
 #btnResetVisible, #btnFullscreen{
   position: relative !important;
   left: calc(-1 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="reset-fs-nofloat-2025-08-28">
 /* === WEB y MÓVIL: Reiniciar y Pantalla Completa dejan de ser flotantes === */
 #floatingControls{
@@ -884,8 +792,7 @@ function playSfx(kind){
 #btnResetVisible, #btnFullscreen{
   position: relative !important;
   left: calc(-1 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="reset-fs-nofloat-both-2025-08-28">
 /* === WEB y MÓVIL: Reiniciar y Pantalla Completa dejan de ser flotantes === */
 #floatingControls{
@@ -901,28 +808,24 @@ function playSfx(kind){
 #btnResetVisible, #btnFullscreen{
   position: relative !important;
   left: calc(-1 * var(--square)) !important; /* mantiene corrimiento a la izquierda */
-}
-</style>
+}</style>
 <style id="reset-fs-nofloat-both-up3squares-2025-08-28">
 /* === WEB y MÓVIL: subir botones Reiniciar y Pantalla Completa 3 casilleros === */
 #floatingControls{
   margin-top: 0 !important; /* reiniciamos margen */
   margin-top: calc(0 * var(--square)) !important;
   transform: translateY(calc(-3 * var(--square))) !important; /* subir 3 casilleros */
-}
-</style>
+}</style>
 <style id="reset-fs-nofloat-both-up2squares-2025-08-28">
 /* === WEB y MÓVIL: ajustar botones Reiniciar y Pantalla Completa a subir solo 2 casilleros (bajar 1 desde el ajuste previo) === */
 #floatingControls{
   transform: translateY(calc(-2 * var(--square))) !important; /* subir solo 2 casilleros en total */
-}
-</style>
+}</style>
 <style id="reset-fs-nofloat-both-up1square-2025-08-28">
 /* === WEB y MÓVIL: ajustar botones Reiniciar y Pantalla Completa a subir solo 1 casillero (bajar 1 desde el ajuste previo) === */
 #floatingControls{
   transform: translateY(calc(-1 * var(--square))) !important; /* subir solo 1 casillero en total */
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-top-align-left-2025-08-28">
 /* === SOLO MÓVIL: subir botones Reiniciar y Pantalla Completa arriba del tablero, alineados con los botones superiores izquierdos === */
 @media (max-width:699px){
@@ -943,8 +846,7 @@ function playSfx(kind){
     left: 0 !important;
     position: relative !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-top-align-left-up3squares-2025-08-28">
 /* === SOLO MÓVIL: botones Reiniciar y Pantalla Completa en fila horizontal, 3 casilleros más arriba === */
 @media (max-width:699px){
@@ -965,16 +867,14 @@ function playSfx(kind){
     left: 0 !important;
     position: relative !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-top-align-left-up2_5squares-2025-08-28">
 /* === SOLO MÓVIL: bajar medio casillero los botones (quedan a 2.5 casilleros arriba) === */
 @media (max-width:699px){
   #floatingControls{
     top: calc(-2.5 * var(--square)) !important; /* ajuste fino */
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-top-align-left-vertical-2025-08-28">
 /* === SOLO MÓVIL: botones Reiniciar y Pantalla Completa en columna (uno debajo del otro) === */
 @media (max-width:699px){
@@ -986,8 +886,7 @@ function playSfx(kind){
   #btnResetVisible, #btnFullscreen{
     width: auto !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-mobile-vertical-floating-2025-08-28">
 /* === SOLO MÓVIL: botones Reiniciar y Pantalla Completa flotantes en columna arriba del tablero === */
 @media (max-width:699px){
@@ -1004,15 +903,13 @@ function playSfx(kind){
   #btnResetVisible, #btnFullscreen{
     width: auto !important;
   }
-}
-</style>
+}</style>
 <style id="board-up-half-square-both-2025-08-28">
 /* === WEB y MÓVIL: subir el tablero medio casillero === */
 #board, #mobile-board, #mobile-board-down-1square{
   /* Reemplaza cualquier transform previo, sumando -0.5 casillero al offset existente */
   transform: translateY(calc(var(--board-offset-y, 0px) - 0.5 * var(--square))) !important;
-}
-</style>
+}</style>
 <style id="reset-fs-web-down-half-square-2025-08-28">
 /* === SOLO WEB: bajar botones Reiniciar y Pantalla Completa medio casillero === */
 @media (min-width:700px){
@@ -1020,22 +917,19 @@ function playSfx(kind){
     top: calc(0.5 * var(--square)) !important;
     position: relative !important;
   }
-}
-</style>
+}</style>
 <style id="reset-fs-both-right1square-2025-08-28">
 /* === WEB y MÓVIL: desplazar botones Reiniciar y Pantalla Completa 1 casillero a la derecha === */
 #btnResetVisible, #btnFullscreen{
   position: relative !important;
   left: calc(1 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="reset-fs-both-right0_5square-2025-08-28">
 /* === WEB y MÓVIL: desplazar botones Reiniciar y Pantalla Completa medio casillero a la derecha desde la base === */
 #btnResetVisible, #btnFullscreen{
   position: relative !important;
   left: calc(0.5 * var(--square)) !important;
-}
-</style>
+}</style>
 <style>
 @media (max-width: 768px) {
   #board, #mobile-board, #mobile-board-down-1square {
@@ -1043,8 +937,7 @@ function playSfx(kind){
     position: relative;
     top: 0.5em;
   }
-}
-</style>
+}</style>
 <style id="donate-bar-style-2025-08-28">
   /* === Barra de donaciones (debajo del tablero) === */
   #donateBar{
@@ -1068,8 +961,7 @@ function playSfx(kind){
   @media (max-width:699px){
     #donateBar{ gap:10px; }
     #donateBar .donate-logo img{ height:32px; }
-  }
-</style>
+  }</style>
 <style id="donate-mobile-tweak-2025-08-28">
 /* === SOLO MÓVIL: botones de donación 15% más chicos y barra 3 casilleros a la IZQUIERDA === */
 @media (max-width:699px){
@@ -1082,16 +974,14 @@ function playSfx(kind){
   #donateBar{
     transform: translateX(calc(-3 * var(--square))) !important;
   }
-}
-</style>
+}</style>
 <style id="donate-mobile-left3-2025-08-28">
   /* SOLO MÓVIL: mover barra de donaciones 3 casilleros a la IZQUIERDA */
   @media (max-width:699px){
     #donateBar{
       transform: translateX(calc(-3 * var(--square))) !important;
     }
-  }
-</style>
+  }</style>
 <style id="donate-mobile-left3-float-2025-08-28">
   /* SOLO MÓVIL: mover barra de donaciones 3 casilleros a la IZQUIERDA y hacerla flotante */
   @media (max-width:699px){
@@ -1102,8 +992,7 @@ function playSfx(kind){
       transform: translateX(calc(-50% - 3 * var(--square))) !important;
       z-index: 9999;
     }
-  }
-</style>
+  }</style>
 <style id="donate-mobile-float-center-board-2025-08-28">
   /* SOLO MÓVIL: hacer flotante el botón de donaciones y centrarlo en medio del tablero, 5 casilleros más arriba */
   @media (max-width:699px){
@@ -1114,20 +1003,17 @@ function playSfx(kind){
       transform: translate(-50%, -50%) !important;
       z-index: 9999;
     }
-  }
-</style>
+  }</style>
 <style id="donate-left4-2025-08-28">
   /* DESPLAZAR BOTONES DE DONACIÓN 4 CASILLEROS A LA IZQUIERDA (WEB y MÓVIL) */
   #donateBar{
     transform: translateX(calc(-4 * var(--square))) !important;
-  }
-</style>
+  }</style>
 <style id="donate-left4-uphalf-2025-08-28">
   /* WEB y MÓVIL: desplazar la barra de donaciones 4 casilleros a la izquierda y 0.5 casillero hacia arriba */
   #donateBar{
     transform: translate(calc(-4 * var(--square)), calc(-0.5 * var(--square))) !important;
-  }
-</style>
+  }</style>
 <style id="colaboraBtn-style-2025-08-28">
   /* Estilo para el botón "Colabora<br>con el proyecto" */
   #colaboraBtn{
@@ -1139,8 +1025,7 @@ function playSfx(kind){
     font-weight: bold;
     cursor: pointer;
     transform: translateX(calc(-2 * var(--square)));
-  }
-</style>
+  }</style>
 <style id="indicator-up-half-square-2025-08-29">
 /* Subir indicadores medio casillero */
 .mode-inline{
@@ -1148,8 +1033,7 @@ function playSfx(kind){
 }
 .bot-hud{
   transform: translateY(calc(-0.5 * var(--square))) !important;
-}
-</style>
+}</style>
 <style id="indicator-left-3squares-2025-08-29">
 /* Desplazar indicadores 3 casilleros a la izquierda */
 .mode-inline{
@@ -1157,8 +1041,7 @@ function playSfx(kind){
 }
 .bot-hud{
   transform: translate(calc(-3 * var(--square)), calc(-0.5 * var(--square))) !important;
-}
-</style>
+}</style>
 <style id="bot-popups-center-horizontal-only-2025-08-29">
 /* Centrar horizontalmente los avisos del bot SIN modificar su funcionamiento */
 .bot-hud,
@@ -1177,8 +1060,7 @@ function playSfx(kind){
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center !important;
-}
-</style>
+}</style>
 <style id="bot-popups-above-board-2025-08-29">
 /* Colocar los carteles de aviso justo encima de la sección superior del tablero, con un margen de 2mm */
 .bot-hud,
@@ -1190,15 +1072,13 @@ function playSfx(kind){
   width: auto !important;
   max-width: min(92vw, 560px) !important;
   z-index: 9999 !important;
-}
-</style>
+}</style>
 <style id="bot-popups-down-1square-2025-08-29">
 /* Bajar los carteles 1 casillero respecto a la parte superior del tablero */
 .bot-hud,
 #botLog{
   top: calc(var(--board-top, 0px) + var(--square) - 2mm) !important;
-}
-</style>
+}</style>
 <style id="mode-indicator-button-smaller-2025-08-29">
 /* Reducir ancho del indicador de modo y del botón un 10% */
 .mode-inline .mode-pill,
@@ -1207,20 +1087,17 @@ function playSfx(kind){
 .mode-inline .btn,
 .mode-inline a[role="button"]{
   transform: scaleX(0.9) !important;  /* reduce ancho al 90% */
-}
-</style>
+}</style>
 <style id="mode-indicator-button-right2-2025-08-29">
 /* Desplazar el bloque de modo (indicador + botón) 2 casilleros a la derecha */
 .mode-inline{
   margin-left: calc(2 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="mode-indicator-button-right2-down1-2025-08-29">
 /* Bajar el bloque de modo (indicador + botón) 1 casillero */
 .mode-inline{
   margin-top: calc(1 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="mode-inline-unify-2025-08-29">
 /* Fuente única de verdad para la posición del bloque de modo (web y móvil) */
 :root{
@@ -1241,39 +1118,33 @@ function playSfx(kind){
   flex-direction: row !important;
   align-items: center !important;
   gap: 8px !important;
-}
-</style>
+}</style>
 <style id="mode-inline-up-half-square-2025-08-29">
 :root{
   --mode-offset-x: calc(2 * var(--square));   /* sigue 2 casilleros a la derecha */
   --mode-offset-y: calc(0.5 * var(--square)); /* ahora solo medio casillero hacia abajo */
-}
-</style>
+}</style>
 <style id="mode-inline-right1-down0_5-2025-08-29">
 :root{
   --mode-offset-x: calc(1 * var(--square));   /* ahora solo 1 casillero a la derecha */
   --mode-offset-y: calc(0.5 * var(--square)); /* medio casillero hacia abajo */
-}
-</style>
+}</style>
 <style id="mode-inline-right0_5-down0_5-2025-08-29">
 :root{
   --mode-offset-x: calc(0.5 * var(--square)); /* medio casillero a la derecha */
   --mode-offset-y: calc(0.5 * var(--square)); /* medio casillero hacia abajo */
-}
-</style>
+}</style>
 <style id="mode-inline-right0_5-down0_5-up3mm-2025-08-29">
 :root{
   --mode-offset-x: calc(0.5 * var(--square));  /* medio casillero a la derecha */
   --mode-offset-y: calc(0.5 * var(--square) - 3mm); /* medio casillero hacia abajo menos 3mm */
-}
-</style>
+}</style>
 <style id="donate-buttons-down-half-square-2025-08-29">
 /* Desplazar la barra de donaciones (PayPal y MercadoPago) medio casillero hacia abajo */
 #donateBar{
   position: relative !important;
   top: calc(0.5 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="mode-inline-shrink-15-2025-08-29">
 /* Reducir ancho del indicador de modo y del botón de selección en un 15% */
 .mode-inline .mode-pill,
@@ -1282,20 +1153,17 @@ function playSfx(kind){
 .mode-inline .btn,
 .mode-inline a[role="button"]{
   transform: scaleX(0.85) !important;  /* reduce ancho al 85% */
-}
-</style>
+}</style>
 <style id="mode-inline-gap-2mm-2025-08-29">
 /* Reducir la separación entre el indicador de modo y el botón selector a ~2mm */
 .mode-inline{
   gap: 2mm !important;
-}
-</style>
+}</style>
 <style id="donate-gap-3mm-2025-08-29">
 /* Ajustar la separación entre el texto "Colabora<br>con el proyecto" y los botones de donación a ~3mm */
 #colaboraBtn{
   margin-right: 3mm !important;
-}
-</style>
+}</style>
 <style id="donate-gap-3mm-fix-2025-08-29">
 /* Forzar ~3mm de separación entre "Colabora<br>con el proyecto" y los logos de donación */
 /* 1) Anular cualquier corrimiento visual que altere la separación percibida */
@@ -1312,22 +1180,19 @@ function playSfx(kind){
   #donateBar{
     gap: 3mm !important;
   }
-}
-</style>
+}</style>
 <style id="donate-left-2squares-2025-08-29">
 /* Desplazar todo el bloque de donaciones 2 casilleros a la izquierda (web y móvil) */
 #donateBar{
   position: relative !important;
   left: calc(-2 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="donate-smaller5-up0_5-2025-08-29">
 /* Reducir bloque de donaciones 5% y subirlo medio casillero */
 #donateBar{
   transform: scale(0.95) translateY(calc(-0.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style>
+}</style>
 <style id="colabora-text-multiline-2025-08-29">
 /* Hacer que el texto "Colabora con el proyecto" sea más angosto y multilinea */
 #colaboraBtn{
@@ -1336,31 +1201,27 @@ function playSfx(kind){
   max-width: 90px !important; /* limitar ancho para forzar el salto */
   text-align: center !important;
   line-height: 1.2em !important;
-}
-</style>
+}</style>
 <style id="donate-left-3squares-2025-08-29">
 /* Desplazar todo el bloque de donaciones 3 casilleros a la izquierda (total) */
 #donateBar{
   position: relative !important;
   left: calc(-3 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="donate-left4-up1-2025-08-29">
 /* Subir 1 casillero en total y desplazar 4 casilleros a la izquierda el bloque de donaciones */
 #donateBar{
   left: calc(-4 * var(--square)) !important;               /* 1 casillero más a la izquierda (total 4) */
   transform: scale(0.95) translateY(calc(-1 * var(--square))) !important;  /* subir total 1 casillero */
   transform-origin: top left !important;
-}
-</style>
+}</style>
 <style id="donate-left4-up1_5-2025-08-29">
 /* Subir 1.5 casilleros en total y mantener 4 casilleros a la izquierda el bloque de donaciones */
 #donateBar{
   left: calc(-4 * var(--square)) !important;
   transform: scale(0.95) translateY(calc(-1.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style>
+}</style>
 <style id="donate-mobile-up0_5-2025-08-29">
 /* Solo en versión móvil: subir medio casillero más */
 @media (max-width: 699px){
@@ -1368,8 +1229,7 @@ function playSfx(kind){
     transform: scale(0.95) translateY(calc(-2 * var(--square))) !important; /* antes -1.5, ahora -2 en móvil */
     transform-origin: top left !important;
   }
-}
-</style>
+}</style>
 <style id="donate-mobile-smaller-2025-08-29">
 /* En versión móvil: achicar botones de donación un 15% para armonizar con la nueva posición */
 @media (max-width: 699px){
@@ -1379,14 +1239,12 @@ function playSfx(kind){
     transform: scale(0.85) !important;
     transform-origin: center center !important;
   }
-}
-</style>
+}</style>
 <style id="donate-left5-2025-08-29">
 /* En ambas versiones: desplazar bloque de donaciones 5 casilleros a la izquierda en total */
 #donateBar{
   left: calc(-5 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="donate-mobile-left0_5-up0_5-2025-08-29">
 @media (max-width: 699px){
   #donateBar{
@@ -1394,22 +1252,19 @@ function playSfx(kind){
     transform: scale(0.85) translateY(calc(-2.5 * var(--square))) !important; 
     transform-origin: top left !important;
   }
-}
-</style>
+}</style>
 <style id="donate-smaller10-2025-08-29">
 /* En ambas versiones: reducir bloque de donaciones un 10% adicional */
 #donateBar{
   transform: scale(0.9) !important;
   transform-origin: top left !important;
-}
-</style>
+}</style>
 <style id="donate-up1square-2025-08-29">
 /* Subir bloque de donaciones 1 casillero más en ambas versiones */
 #donateBar{
   position: relative !important;
   top: calc(-1 * var(--square)) !important;
-}
-</style>
+}</style>
 <style id="mobile-restart-fs-down0_5-2025-08-29">
 /* En versión móvil: bajar medio casillero los botones de reiniciar y ver en pantalla completa */
 @media (max-width: 699px){
@@ -1418,8 +1273,7 @@ function playSfx(kind){
     position: relative !important;
     top: calc(0.5 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 <style id="mobile-board-down0_5-2025-08-29">
 /* En versión móvil: bajar medio casillero el tablero */
 @media (max-width: 699px){
@@ -1427,8 +1281,7 @@ function playSfx(kind){
     position: relative !important;
     top: calc(0.5 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 <style id="board-offset-unify-final-2025-08-29">
 /* === Fuente única de verdad para el desplazamiento vertical del tablero === */
 :root{
@@ -1448,38 +1301,33 @@ function playSfx(kind){
 /* En MÓVIL: sumar +0.5 casillero */
 @media (max-width: 699px){
   :root{ --board-mobile-extra: calc(0.5 * var(--square)); }
-}
-</style>
+}</style>
 <style id="mode-inline-mobile-up0_5-2025-08-29">
 @media (max-width: 699px){
   .mode-inline{
     /* Mantener offsets previos y restar 0.5 casillero en móvil */
     transform: translate(var(--mode-offset-x), calc(var(--mode-offset-y) - 0.5 * var(--square))) !important;
   }
-}
-</style>
+}</style>
 <style id="board-mobile-down1square-2025-08-29">
 @media (max-width: 699px){
   :root{
     /* Total: ya teníamos +0.5 casillero, ahora serán +1.5 en móvil */
     --board-mobile-extra: calc(1.5 * var(--square));
   }
-}
-</style>
+}</style>
 <style id="board-down0_5-all-2025-08-29">
 /* En todas las versiones: bajar medio casillero el tablero */
 #board, #mobile-board, #mobile-board-down-1square{
   transform: translateY(calc(var(--board-offset-y, 0px) + var(--board-mobile-extra, 0px) + 0.5 * var(--square))) !important;
-}
-</style>
+}</style>
 <style id="board-mobile-total1square-2025-08-29">
 @media (max-width: 699px){
   :root{
     /* Para un total de 1 casillero en móvil: 0.5 global + 0.5 extra móvil */
     --board-mobile-extra: calc(0.5 * var(--square));
   }
-}
-</style>
+}</style>
 <style id="mode-inline-smaller10-2025-08-29">
 /* Reducir tamaño del indicador y botón de selección de modo un 10% en ambas versiones */
 .mode-inline .mode-pill,
@@ -1489,16 +1337,14 @@ function playSfx(kind){
 .mode-inline a[role="button"]{
   transform: scale(0.9) !important;
   transform-origin: center center !important;
-}
-</style>
+}</style>
 <style id="mode-inline-up0_5-gapSmall-2025-08-29">
 /* Subir medio casillero en ambas versiones */
 .mode-inline{
   position: relative !important;
   top: calc(-0.5 * var(--square)) !important;
   gap: 2mm !important; /* reducir separación entre indicador y botón */
-}
-</style>
+}</style>
 <style id="mode-line-and-anchor-fix-2025-08-29">
 /* Quitar cualquier línea/ornamento a la izquierda del indicador de modo */
 .mode-inline,
@@ -1522,15 +1368,13 @@ function playSfx(kind){
   margin-right: 0 !important;
   justify-content: flex-start !important;
   align-self: flex-start !important;
-}
-</style>
+}</style>
 <style id="mode-inline-mobile-up0_5-2025-08-29B">
 @media (max-width: 699px){
   .mode-inline{
     transform: translate(var(--mode-offset-x), calc(var(--mode-offset-y) - 0.5 * var(--square))) !important;
   }
-}
-</style>
+}</style>
 <style id="mode-inline-smaller5-compact-2025-08-29">
 /* Reducir tamaño del indicador y botón un 5% */
 .mode-inline .mode-pill,
@@ -1547,8 +1391,7 @@ function playSfx(kind){
   margin: 0 !important;
   padding: 2px 4px !important; /* margen interno reducido */
   gap: 2mm !important;         /* separación más ajustada */
-}
-</style>
+}</style>
 <style id="mode-inline-topLeft-2025-08-29">
 /* Colocar el indicador de modo y botón en la parte superior izquierda del tablero con margen 3mm */
 .mode-inline{
@@ -1559,15 +1402,13 @@ function playSfx(kind){
   gap: 2mm !important;
   transform: none !important; /* anula traslaciones previas */
   z-index: 2147482000 !important;
-}
-</style>
+}</style>
 <style id="mode-inline-mobile-up0_5-topLeft-2025-08-29">
 @media (max-width: 699px){
   .mode-inline{
     top: calc(3mm - 0.5 * var(--square)) !important; /* sube medio casillero desde los 3mm originales */
   }
-}
-</style>
+}</style>
 <style id="mode-inline-mobile-topRight-2025-08-29">
 @media (max-width: 699px){
   .mode-inline{
@@ -1576,8 +1417,7 @@ function playSfx(kind){
     right: 3mm !important; /* 3mm desde el borde derecho */
     justify-content: flex-end !important;
   }
-}
-</style>
+}</style>
 <style id="mode-inline-floating-2025-08-29">
 /* Flotante en ambas versiones */
 .mode-inline{
@@ -1597,8 +1437,7 @@ function playSfx(kind){
     left: auto !important;
     right: 3mm !important;
   }
-}
-</style>
+}</style>
 <style id="mode-inline-insideBoard-topLeft-2025-08-29">
 /* Colocar el indicador + botón dentro del tablero, parte superior izquierda, con margen de 3mm */
 #board, #mobile-board, #mobile-board-down-1square{
@@ -1612,23 +1451,20 @@ function playSfx(kind){
   margin: 0 !important;
   transform: none !important;
   z-index: 1000 !important; /* por encima del tablero */
-}
-</style>
+}</style>
 <style id="mode-insideBoard-mobile-up0_5-2025-08-29">
 @media (max-width: 699px){
   .mode-inline{
     top: calc(3mm - 0.5 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 <style id="board-mobile-down0_5-insideBoard-2025-08-29">
 @media (max-width: 699px){
   #board, #mobile-board, #mobile-board-down-1square{
     position: relative !important;
     top: calc(0.5 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 <style id="ajuste-botones-escala-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v2):
    10% más chicos los botones Reiniciar y Pantalla completa
@@ -1636,8 +1472,7 @@ function playSfx(kind){
 #btnResetVisible, #btnFullscreen{
   transform: translate(calc(-1 * var(--square)), var(--square)) scale(0.9) !important;
   transform-origin: top right !important;
-}
-</style><style id="btn-shift-mobile-extra0_5-2025-08-29">
+}</style><style id="btn-shift-mobile-extra0_5-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v6):
    MÓVIL — bajar 0.5 casillero extra los botones de Pantalla completa y Reiniciar.
    Mantiene el desplazamiento global (-1, +1) y suma +0.5 vertical SOLO en móvil.
@@ -1647,8 +1482,7 @@ function playSfx(kind){
     transform: translate(calc(-1 * var(--square)), calc(1.5 * var(--square))) scale(0.9) !important;
     transform-origin: top right !important;
   }
-}
-</style><style id="donate-buttons-down1-2025-08-29">
+}</style><style id="donate-buttons-down1-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v7):
    WEB + MÓVIL — bajar 1 casillero los botones de colaboración del proyecto.
    Aplicado a #colaboraBtn, #donarMercadoPago y #donarPayPal sin tocar la barra (#donateBar).
@@ -1656,8 +1490,7 @@ function playSfx(kind){
 #colaboraBtn, #donarMercadoPago, #donarPayPal{
   transform: translateY(var(--square)) !important;
   transform-origin: top left !important;
-}
-</style><style id="board-down-0_5-both-final-2025-08-29">
+}</style><style id="board-down-0_5-both-final-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v8):
    WEB + MÓVIL — bajar SOLO el juego (tablero) 0.5 casillero.
    No mueve la base (.frame). Afecta #board y #mobile-board.
@@ -1670,18 +1503,276 @@ function playSfx(kind){
   /* Desplazamiento neto del tablero: offset actual + 0.5 casillero */
   transform: translateY(calc(var(--board-offset-y, 0px) + 0.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style><style id="ui-gap-3mm-2025-08-29">
+}</style><style id="ui-gap-3mm-2025-08-29">
 /* Variable global para separación UI ~3mm */
-:root{ --ui-gap: 3mm; }
-</style><style id="ui-gap-apply-2025-08-29">
+:root{ --ui-gap: 3mm; }</style><style id="ui-gap-apply-2025-08-29">
 /* Aplicar separación de ~3mm respecto del juego */
 #modeDock{ margin-bottom: var(--ui-gap) !important; }
 /* Si la barra de donaciones está debajo del juego, asegurar separación superior */
 #donateBar{ margin-top: var(--ui-gap) !important; }
 /* Por si hubiera otros indicadores/botones en la parte superior del juego */
-.toolbar, .hud, .mode-indicator{ margin-bottom: var(--ui-gap) !important; }
-</style></head>
+.toolbar, .hud, .mode-indicator{ margin-bottom: var(--ui-gap) !important; }</style>
+<style id="aj-center-outline">
+/* Borde tenue alrededor del 8×8 visible */
+#board::after, #mobile-board::after, #mobile-board-down-1square::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(0,0,0,0.25);
+  pointer-events: none;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset;
+}
+@media (max-width: 768px){
+  #board::after, #mobile-board::after, #mobile-board-down-1square::after{
+    border-width: 2px;
+  }
+}</style>
+
+<style id="aj-lateral-tint">
+/* Aclara suavemente los casilleros laterales sin afectar piezas */
+.square{ position: relative; }
+.square.lateral::after{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(255,255,255,0.12); /* tono más claro */
+  pointer-events:none;
+}
+/* En móviles, un poco menos de aclarado */
+@media (max-width:700px){
+  .square.lateral::after{ background: rgba(255,255,255,0.10); }
+}
+/* No aplicar en squares inactivos */
+.square.inactive::after{ display:none; }</style>
+
+<style id="menu-arrow-indicators">
+/* Flechitas para indicar submenús (blancas, a la derecha) */
+#menuDropdown .menu-btn.has-sub::after,
+#menuDropdown .submenu-btn.has-sub::after{
+  content: '▸';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  opacity: 0.9;
+  pointer-events: none;
+  font-weight: 700;
+}
+/* (Opcional) cambiar a chevrón abajo si el panel está abierto */
+#menuDropdown .menu-btn.has-sub.open::after,
+#menuDropdown .submenu-btn.has-sub.open::after{
+  content: '▾';
+}
+</style>
+
+
+<style id="menu-fixes-2025-08-30">
+/* Asegurar que los botones con submenú sean contenedores posicionales */
+#menuDropdown .menu-btn.has-sub,
+#menuDropdown .submenu-btn.has-sub{
+  position: relative !important;
+  padding-right: 32px !important; /* espacio para la flecha */
+  line-height: 1.2 !important;
+  color: #fff !important;
+}
+
+/* Flechas SIEMPRE a la derecha y centradas verticalmente */
+#menuDropdown .menu-btn.has-sub::after,
+#menuDropdown .submenu-btn.has-sub::after{
+  content: '▸' !important;
+  position: absolute !important;
+  right: 10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #fff !important;
+  opacity: 0.95 !important;
+  pointer-events: none !important;
+  font-weight: 800 !important;
+}
+#menuDropdown .menu-btn.has-sub.open::after,
+#menuDropdown .submenu-btn.has-sub.open::after{
+  content: '▾' !important;
+}
+
+/* Submenús laterales como "botones" individuales con esquinas redondeadas */
+.submenu-panel{
+  padding: 8px !important;
+}
+.submenu-items{
+  padding: 8px !important;
+}
+
+/* Botón con submenú (primer nivel dentro del panel) con estilo de tarjeta/botón */
+.submenu-panel .submenu-btn{
+  display: block !important;
+  width: 100% !important;
+  margin: 6px 0 !important;
+  padding: 12px 14px !important;
+  background: #111 !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.45) !important;
+  text-align: left !important;
+}
+.submenu-panel .submenu-btn:hover{
+  background: #222 !important;
+}
+
+/* Ítems del segundo nivel (Versus Bot / Versión de Ajetrez) como botones individuales */
+.submenu-items .submenu-item-btn{
+  display: block !important;
+  width: 100% !important;
+  margin: 6px 0 !important;
+  padding: 10px 12px !important;
+  background: #111 !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 .2rem .45rem rgba(0,0,0,.4) !important;
+  text-align: left !important;
+}
+.submenu-items .submenu-item-btn:hover{
+  background: #222 !important;
+}
+
+/* Botones principales del dropdown: asegurar contraste y consistencia */
+#menuDropdown .menu-btn{
+  color: #fff !important;
+  background: #111 !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  border-radius: 10px !important;
+  margin: 6px !important;
+  padding: 12px 14px !important;
+}
+#menuDropdown .menu-btn:hover{
+  background: #222 !important;
+}
+
+/* Evitar que nada tape el texto */
+#menuDropdown .menu-btn, 
+#menuDropdown .submenu-btn, 
+#menuDropdown .submenu-item-btn{
+  overflow: visible !important;
+}
+</style>
+
+
+<style id="menu-fixes-2025-08-30-b">
+/* Contenedores transparentes (dropdown y paneles) */
+#menuDropdown,
+#menuDropdown .submenu-panel,
+#menuDropdown .submenu-items{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Asegurar visibilidad del texto y layout estable con flecha a la derecha */
+#menuDropdown .menu-btn,
+#menuDropdown .submenu-btn{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  color: #fff !important;
+  line-height: 1.2 !important;
+  padding-right: 14px !important; /* sin reservar espacio absoluto para la flecha */
+  position: relative !important;
+}
+
+/* Flechas como inline (no absolutas), empujadas a la derecha con margin-left:auto */
+#menuDropdown .menu-btn.has-sub::after,
+#menuDropdown .submenu-btn.has-sub::after{
+  content: '▸' !important;
+  position: static !important;     /* inline, no absolute */
+  margin-left: auto !important;    /* envía la flecha a la derecha */
+  transform: none !important;
+  color: #fff !important;
+  opacity: 0.95 !important;
+  pointer-events: none !important;
+  font-weight: 800 !important;
+}
+#menuDropdown .menu-btn.has-sub.open::after,
+#menuDropdown .submenu-btn.has-sub.open::after{
+  content: '▾' !important;
+}
+
+/* Botones siguen siendo sólidos para legibilidad, pero el fondo del contenedor es transparente */
+#menuDropdown .menu-btn{
+  background: #111 !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  border-radius: 10px !important;
+  margin: 6px !important;
+  padding: 12px 14px !important;
+}
+#menuDropdown .menu-btn:hover{ background:#222 !important; }
+
+/* Submenús como botones individuales */
+.submenu-panel{
+  padding: 8px !important;
+}
+.submenu-items{
+  padding: 8px !important;
+}
+.submenu-panel .submenu-btn{
+  width: 100% !important;
+  margin: 6px 0 !important;
+  padding: 12px 14px !important;
+  background: #111 !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.45) !important;
+  text-align: left !important;
+}
+.submenu-panel .submenu-btn:hover{ background:#222 !important; }
+
+.submenu-items .submenu-item-btn{
+  display: block !important;
+  width: 100% !important;
+  margin: 6px 0 !important;
+  padding: 10px 12px !important;
+  background: #111 !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 .2rem .45rem rgba(0,0,0,.4) !important;
+  text-align: left !important;
+}
+.submenu-items .submenu-item-btn:hover{ background:#222 !important; }
+</style>
+
+
+<style id="menu-nowrap-and-wider-2025-08-30">
+/* Hacer que los textos de los botones no se partan en varias líneas */
+#menuDropdown .menu-btn,
+#menuDropdown .submenu-btn,
+#menuDropdown .submenu-item-btn{
+  white-space: nowrap !important;
+}
+
+/* Ampliar el ancho del dropdown para que quepan frases largas en una sola línea */
+#menuDropdown{
+  width: max-content !important;   /* se adapta al contenido */
+  min-width: 360px !important;     /* un poco más ancho que antes */
+}
+
+/* Submenús laterales también más anchos */
+#menuDropdown .submenu-panel{
+  width: max-content !important;
+  min-width: 320px !important;
+}
+
+/* Ajuste fino: evitar que la flecha recorte el texto en botones con submenú */
+#menuDropdown .menu-btn.has-sub,
+#menuDropdown .submenu-btn.has-sub{
+  padding-right: 22px !important; /* suficiente para la flecha con layout flex */
+}
+</style>
+
+</head>
 <script>const PIECE_SPRITES = {
   "b_R": "assets/piezas_aa/b_R.png",
   "b_N": "assets/piezas_aa/b_N.png",
@@ -1697,6 +1788,187 @@ function playSfx(kind){
   "w_P": "assets/piezas_aa/w_P.png"
 };</script>
 <body>
+
+<!-- === Menú de funciones (flotante, centrado) con submenús laterales a la derecha === -->
+<style>
+#menuContainer {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000;
+  font-family: inherit;
+}
+#menuToggle {
+  background: #111827;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 .3rem .6rem rgba(0,0,0,.25);
+}
+#menuDropdown {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  box-shadow: 0 .4rem .8rem rgba(0,0,0,.6);
+  min-width: 240px;
+  overflow: visible;
+}
+#menuDropdown .menu-list{
+  display: flex;
+  flex-direction: column;
+}
+#menuDropdown .menu-btn{width:100%;padding:10px 14px;border:none;background:#111;color:#fff;text-align:left;cursor:pointer;font-weight:600;position:relative;}
+#menuDropdown .menu-btn{width:100%;padding:10px 14px;border:none;background:#111;color:#fff;text-align:left;cursor:pointer;font-weight:600;position:relative;}
+
+/* Submenús laterales (panel a la derecha del botón padre) */
+.submenu-panel{
+  display:none;
+  position:absolute;
+  top:0;
+  left:100%;
+  background:#000;
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:10px;
+  box-shadow:0 .3rem .6rem rgba(0,0,0,.6);
+  min-width:220px;
+  padding:6px 0;
+  z-index:3100;
+}
+.submenu-panel .submenu-btn{width:100%;padding:9px 14px;border:none;text-align:left;background:#111;color:#fff;cursor:pointer;font-weight:500;}
+.submenu-panel .submenu-btn{width:100%;padding:9px 14px;border:none;text-align:left;background:#111;color:#fff;cursor:pointer;font-weight:500;}
+
+/* Sub-submenús (también laterales a la derecha) */
+.submenu-items{
+  display:none;
+  position:absolute;
+  top:0;
+  left:100%;
+  background:#000;
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:10px;
+  box-shadow:0 .3rem .6rem rgba(0,0,0,.6);
+  min-width:200px;
+  z-index:3200;
+}
+.submenu-items .submenu-item-btn{display:block;width:100%;padding:8px 12px;text-align:left;border:none;background:#111;color:#fff;cursor:pointer;font-weight:500;}
+.submenu-items .submenu-item-btn{display:block;width:100%;padding:8px 12px;text-align:left;border:none;background:#111;color:#fff;cursor:pointer;font-weight:500;}
+
+/* Indicadores de despliegue (triangulito) */
+.menu-btn.has-sub::after,
+.submenu-btn{width:100%;padding:9px 14px;border:none;text-align:left;background:#111;color:#fff;cursor:pointer;font-weight:500;}
+.menu-btn.has-sub.open::after,
+.submenu-btn{width:100%;padding:9px 14px;border:none;text-align:left;background:#111;color:#fff;cursor:pointer;font-weight:500;}
+</style>
+
+<div id="menuContainer">
+  <button id="menuToggle">☰ Menú de funciones</button>
+  <div id="menuDropdown">
+    <div class="menu-list">
+      <!-- Botón padre con submenú lateral -->
+      <button class="menu-btn has-sub" data-target="#submenu-modo">Modo de juego</button>
+      <div id="submenu-modo" class="submenu-panel">
+        <button class="submenu-btn" data-action="1v1">1 vs 1</button>
+
+        <button class="submenu-btn has-sub" data-target="#subitems-versus-bot">Versus Bot</button>
+        <div id="subitems-versus-bot" class="submenu-items">
+          <button class="submenu-item-btn" data-action="bot-facil">Fácil</button>
+          <button class="submenu-item-btn" data-action="bot-medio">Medio</button>
+          <button class="submenu-item-btn" data-action="bot-dificil">Difícil</button>
+          <button class="submenu-item-btn" data-action="bot-avanzado">Avanzado</button>
+        </div>
+
+        <button class="submenu-btn" data-action="online">Juega Online</button>
+
+        <button class="submenu-btn has-sub" data-target="#subitems-version-ajetrez">Versión de Ajetrez</button>
+        <div id="subitems-version-ajetrez" class="submenu-items">
+          <button class="submenu-item-btn" data-action="modo-simple">Modo simple</button>
+          <button class="submenu-item-btn" data-action="modo-guerra">Modo Guerra</button>
+          <button class="submenu-item-btn" data-action="modo-rubik">Modo Rubik</button>
+        </div>
+      </div>
+
+      <!-- Resto de opciones (sin submenús por ahora) -->
+      <button class="menu-btn" data-action="guia">Guía del juego</button>
+      <button class="menu-btn" data-action="personalizacion">Personalización</button>
+      <button class="menu-btn" data-action="revision">Revisión de partidas y movimientos</button>
+      <button class="menu-btn" data-action="login">Login de usuario</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const menuToggle = document.getElementById("menuToggle");
+  const dropdown = document.getElementById("menuDropdown");
+  const ROOT = document.getElementById("menuContainer");
+
+  // Abrir/cerrar menú principal
+  menuToggle.addEventListener("click", function(e){
+    e.stopPropagation();
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  });
+
+  // Click fuera cierra todo
+  document.addEventListener("click", function(e){
+    if (!ROOT.contains(e.target)){
+      dropdown.style.display = "none";
+      ROOT.querySelectorAll(".submenu-panel").forEach(p => p.style.display = "none");
+      ROOT.querySelectorAll(".submenu-items").forEach(p => p.style.display = "none");
+      ROOT.querySelectorAll(".has-sub").forEach(btn => btn.classList.remove("open"));
+    }
+  });
+
+  // Delegación para abrir/cerrar submenús laterales
+  ROOT.addEventListener("click", function(e){
+    const btn = e.target.closest(".has-sub");
+    if (btn && btn.hasAttribute("data-target")){
+      e.stopPropagation();
+      const targetSel = btn.getAttribute("data-target");
+      const panel = ROOT.querySelector(targetSel);
+      if (!panel) return;
+      const isOpen = panel.style.display === "block";
+
+      // Cerrar otros al mismo nivel
+      const parent = btn.parentElement;
+      if (parent){
+        parent.querySelectorAll(".submenu-panel, .submenu-items").forEach(p => { if(p !== panel) p.style.display = "none"; });
+        parent.querySelectorAll(".has-sub").forEach(b => { if(b !== btn) b.classList.remove("open"); });
+      }
+
+      panel.style.display = isOpen ? "none" : "block";
+      btn.classList.toggle("open", !isOpen);
+    }
+  });
+
+  // Acciones de botones simples
+  ROOT.addEventListener("click", function(e){
+    const actionBtn = e.target.closest("[data-action]");
+    if (actionBtn && !actionBtn.classList.contains("has-sub")){
+      dropdown.style.display = "none";
+      ROOT.querySelectorAll(".submenu-panel").forEach(p => p.style.display = "none");
+      ROOT.querySelectorAll(".submenu-items").forEach(p => p.style.display = "none");
+      ROOT.querySelectorAll(".has-sub").forEach(btn => btn.classList.remove("open"));
+    }
+  });
+})();
+</script>
+
+
+
+
+
 <div class="container">
 <div class="frame">
 <div class="toolbar" id="toolbar"></div>
@@ -1735,14 +2007,42 @@ function playSfx(kind){
   function makeInitialBoard16x8(){
   const b=Array.from({length:8},()=>Array(16).fill(EMPTY));
   const back=["R","N","B","Q","K","B","N","R"];
-  const row=back.concat(back);
+  const row=back.concat(back); // 16 columnas
   const pawns=Array(16).fill("P");
-  // Negras arriba
-  b[0]=row.map(t=>makePiece(t,'b'));
-  b[1]=pawns.map(()=>makePiece('P','b'));
-  // Blancas abajo
-  b[6]=pawns.map(()=>makePiece('P','w'));
-  b[7]=row.map(t=>makePiece(t,'w'));
+
+  // --- Negras ---
+  // Objetivo: mover SOLO las 8 primeras piezas (A..H, columnas 0..7) dos filas hacia abajo:
+  //   - back row (fila 8 → índice 0) pasa a fila 6 (índice 2) en columnas 0..7
+  //   - peones (fila 7 → índice 1) pasa a fila 5 (índice 3) en columnas 0..7
+  // Mantener las piezas de columnas 8..15 en sus filas originales (0 y 1).
+  for(let c=0;c<16;c++){
+    const pieceBack = makePiece(row[c],'b');
+    const piecePawn = makePiece('P','b');
+    if(c<8){
+      // columnas A..H: bajan 2 filas
+      b[2][c] = pieceBack; // back row a fila 6
+      b[3][c] = piecePawn; // peones a fila 5
+    } else {
+      // columnas I..P: quedan en 8 y 7
+      b[0][c] = pieceBack;
+      b[1][c] = piecePawn;
+    }
+  }
+
+  // --- Blancas: mover SOLO la sección que sobresale (I..P = 8..15) 2 filas hacia ARRIBA; A..H quedan igual
+  for(let c=0;c<16;c++){
+    const pieceBackW = makePiece(row[c],'w');
+    const piecePawnW = makePiece('P','w');
+    if(c>=8){
+      // columnas I..P: suben 2 filas (desde 7 y 6 -> 5 y 4)
+      b[5][c] = pieceBackW; // back row blanca (fila 1 real) sube a fila 3 (índice 5)
+      b[4][c] = piecePawnW; // peones blancos suben a fila 4 (índice 4)
+    } else {
+      // columnas A..H: quedan en 7 y 6
+      b[7][c] = pieceBackW;
+      b[6][c] = piecePawnW;
+    }
+  }
   return b;
 }
   const initialOffsets=[8,8,8,8,0,0,0,0];
@@ -2019,7 +2319,6 @@ function inCheck(vis,color){ const k=findKing(vis,color); if(!k) return false; c
       }
     }
 
-
     // Enroque: mover también la torre
     if(special && special.castle){
       const rf = special.rookFrom, rt = special.rookTo;
@@ -2170,7 +2469,6 @@ function __ajInsufficientMaterial(b){
   }
   return false;
 }
-
 
 // === Ajetrez: Tablas por material insuficiente SOLO en el 8×8 central ===
 function __ajInsufficientMaterialVIS(vis){
@@ -2339,9 +2637,7 @@ function renderToolbarBottom(){
   if(!el) return;
   el.innerHTML = '';}
 
-
   
-
 
 // ==== SVG de piezas (versión estilizada ++ con más curvas) ====
 
@@ -2370,7 +2666,7 @@ function renderBoard(){
         const isCell=bc!==null;
         const inCentral=d>=8 && d<=15;
         const btn=document.createElement('button');
-        btn.className='square '+(isCell?(((r+bc)%2===1)?'dark':'light'):'inactive');
+        btn.className='square '+(isCell?(((r+bc)%2===1)?'dark':'light'):'inactive') + (inCentral?' central':' lateral');
         const span=document.createElement('span');
         if(isCell){
             const p=board[r][bc];
@@ -2455,8 +2751,6 @@ function renderRowControls(){
 
     rowControlsEl.append(line);
 }
-
-
 
   function tips(){
     const v=[];
@@ -2668,7 +2962,6 @@ function showOverlay(text){
     return true; // si no hay regla presente, no bloquear
   };
 })();
-
 
   function resetAll(){
     board=makeInitialBoard16x8(); offsets=initialOffsets.slice(); turn='w'; sel=null; moves=[]; msg='Blancas mueven'; pendingShift=null; epTarget=null; botLog=[]; gameOver=false; winner=null; overlayText=null;
@@ -3065,8 +3358,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     box-shadow: 0 .5rem 1.25rem rgba(0,0,0,.35);
     max-width: 70vw;
     white-space: nowrap;
-  }
-</style>
+  }</style>
 <div class="bot-hud" id="botHUD"><div class="bot-card" id="botHUDText"></div></div>
 <script id="botHUD-helpers">
 (function(){
@@ -3235,16 +3527,14 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     position: relative !important;
     top: 20px !important;
   }
-}
-</style>
+}</style>
 <style>
 @media (max-width: 699px){
   #rowControls{
     margin-top: 10px !important;
     transform: translateX(calc(-50% + var(--square) * 8)) !important;
   }
-}
-</style>
+}</style>
 <style>
 @media (max-width: 699px){
   #overlay{ 
@@ -3254,8 +3544,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     position: relative !important;
     top: calc(var(--square) * 2) !important; /* bajar 2 casilleros */
   }
-}
-</style>
+}</style>
 <style id="mobile-reset-fs-force-style-2025-08-28">
 @media (max-width:699px){
   #floatingControls{
@@ -3276,8 +3565,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     top: 0 !important;
     position: relative !important;
   }
-}
-</style>
+}</style>
 <script id="mobile-reset-fs-neutralizer-2025-08-28">
 // Neutraliza scripts que muevan los controles en móvil
 (function(){
@@ -3333,8 +3621,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   /* Opcional: compactar un poco en móvil si hace falta */
   .seg.mode-inline .mode-pill{ font-size: 0.95em; }
   .seg.mode-inline .mode-switch{ font-size: 0.95em; }
-}
-</style>
+}</style>
 <script id="mode-mobile-center-float-js-2025-08-29">
 (function(){
   function isMobile(){ return window.innerWidth <= 699; }
@@ -3378,8 +3665,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   margin-top: 0 !important;
   transform: translateY(calc(0.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style><style id="btn-transform-reset-2025-08-29">
+}</style><style id="btn-transform-reset-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v10):
    Mantener botones 10% más chicos sin traslaciones previas.
    Se coloca al final para ganar la cascada.
@@ -3387,8 +3673,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
 #btnResetVisible, #btnFullscreen{
   transform: scale(0.9) !important;
   transform-origin: bottom right !important;
-}
-</style><style id="board-down-0_5-override-v2-2025-08-29">
+}</style><style id="board-down-0_5-override-v2-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v13):
    WEB + MÓVIL — forzar que SOLO el tablero baje 0.5 casillero.
    (La base .frame no se mueve).
@@ -3399,8 +3684,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   margin-top: 0 !important;
   transform: translateY(calc(0.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style><style id="mode-dock-top-right-2025-08-29">
+}</style><style id="mode-dock-top-right-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v14):
    Modo: dock superior-derecha dentro de la base (.frame), NO flotante (static). */
 .frame{ position: relative !important; }
@@ -3429,8 +3713,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   flex-direction: row !important;
   align-items: center !important;
   gap: 8px !important;
-}
-</style><script id="mode-dock-attach-2025-08-29">
+}</style><script id="mode-dock-attach-2025-08-29">
 /*! Mode Dock Attach — v2 (2025-08-29)
     - Dockea el indicador + botón de modo en la esquina sup. derecha de la base (.frame)
     - **Evita duplicados**: siempre deja **1 solo** conjunto.
@@ -3539,8 +3822,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   align-items: center !important;
   gap: 8px !important;
   margin-top: var(--ui-gap, 3mm) !important;   /* separarlos del juego */
-}
-</style><style id="floatingControls-static-offset-2025-08-29">
+}</style><style id="floatingControls-static-offset-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v17):
    #floatingControls fijos: subir 1 casillero y desplazar 1 casillero a la izquierda (web + móvil).
 */
@@ -3549,8 +3831,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   margin-top: calc(var(--ui-gap, 3mm) - 1 * var(--square)) !important;
   /* desplazar 1 casillero hacia la izquierda (separación desde el borde derecho) */
   padding-right: calc(1 * var(--square)) !important;
-}
-</style><style id="board-up-0_5-final-2025-08-29">
+}</style><style id="board-up-0_5-final-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v18):
    WEB + MÓVIL — mover SOLO el tablero (dentro del contenedor) 0.5 casillero hacia ARRIBA.
    La base .frame no se mueve.
@@ -3561,8 +3842,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   margin-top: 0 !important;
   transform: translateY(calc(-0.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style><style id="baseFooter-layout-2025-08-29">
+}</style><style id="baseFooter-layout-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v19):
    Pie de base con donaciones (izq) e controles (der), debajo del juego con ~3.5mm de separación. */
 :root{ --ui-donate-gap: 3.5mm; }
@@ -3592,22 +3872,19 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   padding: 0 !important;
   width: auto !important;
   margin-left: auto !important; /* empuja a la derecha dentro del footer */
-}
-</style><style id="baseFooter-up-2squares-2025-08-29">
+}</style><style id="baseFooter-up-2squares-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v20):
    Subir TODOS los botones inferiores con su indicador (donaciones + controles) 2 casilleros. */
 #baseFooter{
   position: relative !important;
   transform: translateY(calc(-2 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style><style id="floatingControls-left-0_5square-2025-08-29">
+}</style><style id="floatingControls-left-0_5square-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v21):
    Desplazar #floatingControls medio casillero a la izquierda (web + móvil) manteniendo alineación. */
 #floatingControls{
   margin-right: calc(0.5 * var(--square)) !important; /* gap al borde derecho para moverlo a la izquierda */
-}
-</style><style id="baseFooter-up-2_5squares-2025-08-29">
+}</style><style id="baseFooter-up-2_5squares-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v22):
    Subir TODOS los botones inferiores (donaciones + controles) 0.5 casillero adicional.
    Total neto respecto a la base: 2.5 casilleros hacia arriba. */
@@ -3615,8 +3892,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   position: relative !important;
   transform: translateY(calc(-2.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style><style id="board-center-horizontal-2025-08-29">
+}</style><style id="board-center-horizontal-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v23):
    Centrar el tablero (izq/der) dentro de la base, en web + móvil. */
 #board{
@@ -3625,8 +3901,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   margin-right: auto !important;
   left: auto !important;
   right: auto !important;
-}
-</style><style id="baseFooter-up-mobile-plus1-2025-08-29">
+}</style><style id="baseFooter-up-mobile-plus1-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v24):
    SOLO MÓVIL — subir todos los botones inferiores (incluye indicador) 1 casillero adicional.
    (Sobre el desplazamiento base existente) */
@@ -3635,15 +3910,13 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     transform: translateY(calc(-3.5 * var(--square))) !important; /* suponiendo base -2.5, sumamos -1 */
     transform-origin: top left !important;
   }
-}
-</style><style id="floatingControls-up-0_5square-2025-08-29">
+}</style><style id="floatingControls-up-0_5square-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v25):
    Subir #floatingControls (Reiniciar + Pantalla completa) medio casillero en web y móvil. */
 #floatingControls{
   transform: translateY(calc(-0.5 * var(--square))) !important;
   transform-origin: top right !important;
-}
-</style><style id="baseFooter-up-mobile-plus0_5-2025-08-29">
+}</style><style id="baseFooter-up-mobile-plus0_5-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v26):
    SOLO MÓVIL — subir TODOS los botones inferiores (incluye donaciones e indicador) 0.5 casillero adicional */
 @media (max-width: 699px){
@@ -3651,8 +3924,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     transform: translateY(calc(-4 * var(--square))) !important; /* antes -3.5; ahora -4.0 casilleros */
     transform-origin: top left !important;
   }
-}
-</style><style id="frame-shrink-bottom-2025-08-29">
+}</style><style id="frame-shrink-bottom-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v27):
    Achicar la base contenedora desde abajo hacia arriba en web + móvil.
    - Colapsamos el espacio “muerto” que dejaba el #baseFooter al ser elevado con transform
@@ -3672,36 +3944,395 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   #baseFooter{
     margin-bottom: calc(-4 * var(--square)) !important;
   }
-}
-</style><style id="donateBar-up-0_5square-2025-08-29">
+}</style><style id="donateBar-up-0_5square-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v28):
    Subir el indicador y los botones de donación (donateBar) medio casillero en web + móvil. */
 #donateBar{
   transform: translateY(calc(-0.5 * var(--square))) !important;
   transform-origin: top left !important;
-}
-</style><style id="frame-grow-bottom-2025-08-29">
+}</style><style id="frame-grow-bottom-2025-08-29">
 /* Mod Ajetrez 2025-08-29 (v29):
    Aumentar el alto de la base contenedora del juego 0.5 casillero hacia abajo (web + móvil). */
 .frame{
   padding-bottom: calc(3mm + 0.5 * var(--square)) !important;
+}</style>
+<!-- === Panel: Revisión de partidas y movimientos === -->
+
+<style id="review-panel-style">
+:root{
+  --rev-surface: #f6eddc;         /* crema claro */
+  --rev-surface-2: #efe2c8;       /* variante */
+  --rev-surface-3: #e7d6b8;       /* bordes/hover */
+  --rev-text: #111;
+  --rev-muted: #444;
+  --rev-border: rgba(0,0,0,.18);
+  --rev-shadow: 0 1.2rem 2.4rem rgba(0,0,0,.25);
+  --rev-chip-bg: #f2e7d1;
+  --rev-chip-border: rgba(0,0,0,.12);
 }
-</style></body>
+#reviewOverlay{
+  position: fixed; inset: 0; background: rgba(0,0,0,.30);
+  display: none; align-items: center; justify-content: center;
+  z-index: 2147483600;
+}
+#reviewPanel{
+  width: min(92vw, 1000px);
+  max-height: 86vh;
+  background: var(--rev-surface); color: var(--rev-text);
+  border: 1px solid var(--rev-border);
+  border-radius: 16px;
+  box-shadow: var(--rev-shadow);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+#reviewHeader{
+  display: flex; align-items: center; gap: 10px;
+  justify-content: space-between;
+  padding: 12px 16px; background: var(--rev-surface-2);
+  border-bottom: 1px solid var(--rev-border);
+}
+#reviewHeader h3{ margin: 0; font-size: 18px; font-weight: 800; letter-spacing:.2px; color: var(--rev-text); }
+#revCloseBtn{
+  background: transparent; color: var(--rev-text); border: none; font-size: 20px;
+  cursor: pointer; padding: 6px 8px; border-radius: 8px;
+}
+#revCloseBtn:hover{ background: var(--rev-surface-3); }
+
+#reviewBody{ padding: 14px; overflow: auto; }
+#revChips{ display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.rev-chip{
+  background: var(--rev-chip-bg); border: 1px solid var(--rev-chip-border);
+  padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 13px; color: var(--rev-muted);
+}
+
+#revActions{ display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 12px 0; }
+.rev-btn{
+  background: var(--rev-surface-2); color: var(--rev-text); border: 1px solid var(--rev-border);
+  padding: 8px 12px; border-radius: 10px; font-weight: 700; cursor: pointer;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.08);
+}
+.rev-btn:hover{ background: var(--rev-surface-3); }
+
+#revGrid{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 800px){ #revGrid{ grid-template-columns: 1fr; } }
+
+.rev-card{
+  background: var(--rev-surface-2); border: 1px solid var(--rev-border); border-radius: 12px;
+  padding: 12px;
+}
+.rev-card h4{ margin: 0 0 8px 0; font-size: 15px; color: var(--rev-text); }
+
+#revMoves{ list-style: none; margin: 0; padding: 0; }
+#revMoves li{ padding: 8px 10px; border-bottom: 1px dashed var(--rev-border); font-size: 14px; color: var(--rev-text); }
+#revMoves li:last-child{ border-bottom: none; }
+#revEmpty{ opacity: .75; color: var(--rev-muted); }
+
+.codebox{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  background: var(--rev-surface); border: 1px solid var(--rev-border); border-radius: 10px;
+  padding: 10px; white-space: pre-wrap; word-break: break-word; font-size: 12px; color: var(--rev-text);
+}
+
+/* Área de importación */
+#revImportArea{
+  display: none;
+  margin-top: 8px;
+}
+#revImportArea textarea{
+  width: 100%; min-height: 120px; resize: vertical;
+  border-radius: 10px; border: 1px solid var(--rev-border);
+  padding: 10px; background: #fff; color: #111;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+</style>
+
+
+<div id="reviewOverlay" role="dialog" aria-modal="true" aria-labelledby="reviewTitle">
+  <div id="reviewPanel">
+    <div id="reviewHeader">
+      <h3 id="reviewTitle">Revisión de partidas y movimientos</h3>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <button class="rev-btn" id="revExportPgnBtn" title="Exportar PGN">Exportar PGN</button>
+        <button id="revCloseBtn" title="Cerrar">✕</button>
+      </div>
+    </div>
+    <div id="reviewBody">
+      <div id="revChips">
+        <span class="rev-chip" id="chipTotal">Eventos: 0</span>
+        <span class="rev-chip" id="chipMoves">Movimientos: 0</span>
+        <span class="rev-chip" id="chipCaptures">Capturas: 0</span>
+        <span class="rev-chip" id="chipShifts">Desplazamientos: 0</span>
+      </div>
+
+      <div id="revActions">
+        <button class="rev-btn" id="revCopyBtn">Copiar lista</button>
+        <button class="rev-btn" id="revExportJsonBtn">Exportar JSON</button>
+        <button class="rev-btn" id="revToggleImportBtn">Importar / Pegar</button>
+        <button class="rev-btn" id="revClearBtn">Limpiar</button>
+      </div>
+
+      <div id="revImportArea" class="rev-card">
+        <h4>Pegar eventos o JSON</h4>
+        <p style="margin:6px 0 10px 0; color: var(--rev-muted); font-size:13px;">
+          Pega aquí una lista (una línea por evento) o el JSON exportado anteriormente. Luego presiona <b>Cargar</b>.
+        </p>
+        <textarea id="revImportText" placeholder="Ejemplos:
+1) MOVE — e2e4
+2) JSON exportado de Ajetrez"></textarea>
+        <div style="display:flex; gap:8px; margin-top:8px;">
+          <button class="rev-btn" id="revImportBtn">Cargar</button>
+          <button class="rev-btn" id="revImportClear">Limpiar campo</button>
+        </div>
+      </div>
+
+      <div id="revGrid">
+        <div class="rev-card">
+          <h4>Historial de movimientos</h4>
+          <ul id="revMoves">
+            <li id="revEmpty">Aún no hay eventos registrados en esta sesión.</li>
+          </ul>
+        </div>
+        <div class="rev-card">
+          <h4>Resumen (sesión actual)</h4>
+          <div class="codebox" id="revSummary">{}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<script id="review-panel-logic">
+(function(){
+  // Estado
+  const REV = window.__AJ_REV__ = window.__AJ_REV__ || {
+    events: [],
+    counters: { move:0, capture:0, shift:0 },
+  };
+
+  const el = {};
+  const q = (id)=> document.getElementById(id);
+  const nowDateStr = ()=>{
+    const d = new Date();
+    const pad2 = (n)=> String(n).padStart(2,"0");
+    return d.getFullYear()+"."+pad2(d.getMonth()+1)+"."+pad2(d.getDate());
+  };
+
+  function ensureEls(){
+    el.overlay = q('reviewOverlay');
+    el.moves = q('revMoves');
+    el.empty = q('revEmpty');
+    el.chipTotal = q('chipTotal');
+    el.chipMoves = q('chipMoves');
+    el.chipCaptures = q('chipCaptures');
+    el.chipShifts = q('chipShifts');
+    el.summary = q('revSummary');
+    el.importArea = q('revImportArea');
+    el.importText = q('revImportText');
+  }
+
+  function ts(){
+    const d = new Date();
+    const pad = (n)=> String(n).padStart(2,'0');
+    return d.getHours()+':'+pad(d.getMinutes())+':'+pad(d.getSeconds());
+  }
+
+  function addEvent(kind, payload){
+    const item = { t: Date.now(), ts: ts(), kind, ...payload };
+    REV.events.push(item);
+    if(REV.counters[kind] != null) REV.counters[kind]++;
+    render();
+  }
+
+  function clearAll(){
+    REV.events = [];
+    REV.counters = { move:0, capture:0, shift:0 };
+    render();
+  }
+
+  function render(){
+    ensureEls();
+    // chips
+    el.chipTotal.textContent = 'Eventos: ' + REV.events.length;
+    el.chipMoves.textContent = 'Movimientos: ' + REV.counters.move;
+    el.chipCaptures.textContent = 'Capturas: ' + REV.counters.capture;
+    el.chipShifts.textContent = 'Desplazamientos: ' + REV.counters.shift;
+
+    // lista
+    el.moves.innerHTML = '';
+    if(REV.events.length === 0){
+      const li = document.createElement('li');
+      li.id = 'revEmpty';
+      li.textContent = 'Aún no hay eventos registrados en esta sesión.';
+      el.moves.appendChild(li);
+    }else{
+      REV.events.forEach((ev, idx)=>{
+        const li = document.createElement('li');
+        li.textContent = (idx+1)+'. ['+ev.ts+'] '+ ev.kind.toUpperCase() + (ev.note?(' — '+ev.note):'');
+        el.moves.appendChild(li);
+      });
+    }
+
+    // resumen
+    const summary = {
+      total: REV.events.length,
+      por_tipo: REV.counters,
+      ultimos_5: REV.events.slice(-5)
+    };
+    el.summary.textContent = JSON.stringify(summary, null, 2);
+  }
+
+  // Export PGN (comentado, compatible básico)
+  function buildPGN(){
+    const lines = [];
+    lines.push('[Event "Ajetrez — Revisión"]');
+    lines.push('[Site "Local"]');
+    lines.push('[Date "'+nowDateStr()+'"]');
+    lines.push('[Round "-"]');
+    lines.push('[White "-"]');
+    lines.push('[Black "-"]');
+    lines.push('[Result "*"]');
+    lines.push('');
+    if(REV.events.length === 0){
+      lines.push('; No hay eventos registrados.');
+    } else {
+      REV.events.forEach((ev, i)=>{
+        const n = (i+1) + '.';
+        lines.push('; '+n+' ['+ev.ts+'] '+ev.kind.toUpperCase()+(ev.note?(' — '+ev.note):''));
+      });
+    }
+    lines.push('');
+    lines.push('*');
+    return lines.join('\n');
+  }
+
+  function exportText(filename, text){
+    const blob = new Blob([text], {type:'text/plain'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  // Importar desde textarea (JSON o líneas)
+  function importFromText(raw){
+    if(!raw) return;
+    raw = raw.trim();
+    try{
+      if(raw.startsWith('{') || raw.startsWith('[')){
+        const parsed = JSON.parse(raw);
+        if(parsed && parsed.events && Array.isArray(parsed.events)){
+          REV.events = parsed.events.map(e=>({t:e.t||Date.now(), ts:e.ts||ts(), kind:(e.kind||'move'), note:e.note}));
+          // Recontar
+          REV.counters = { move:0, capture:0, shift:0 };
+          REV.events.forEach(e=>{ if(REV.counters[e.kind]!=null) REV.counters[e.kind]++; });
+          render();
+          return;
+        }
+      }
+    }catch(e){ /* fallback a texto simple */ }
+
+    // Texto simple: cada línea => evento .kind por heurística
+    const lines = raw.split(/\r?\n/).map(s=>s.trim()).filter(Boolean);
+    const guessKind = (s)=>{
+      const L = s.toLowerCase();
+      if(L.includes('capture') or L.includes('captura')) return 'capture';
+      if(L.includes('shift') or L.includes('desplaza') or L.includes('desplazamiento')) return 'shift';
+      return 'move';
+    };
+    lines.forEach(s=>{
+      REV.events.push({ t: Date.now(), ts: ts(), kind: guessKind(s), note: s });
+      if(REV.counters[guessKind(s)]!=null) REV.counters[guessKind(s)]++;
+    });
+    render();
+  }
+
+  // Exponer API global mínima
+  window.AJREV = {
+    add: addEvent,
+    clear: clearAll,
+    open: function(){ ensureEls(); el.overlay.style.display = 'flex'; render(); },
+    close: function(){ ensureEls(); el.overlay.style.display = 'none'; }
+  };
+
+  // Abrir/cerrar panel
+  document.addEventListener('click', function(e){
+    const btn = e.target.closest('[data-action="revision"]');
+    if(btn){
+      const menu = document.getElementById('menuDropdown');
+      if(menu) menu.style.display = 'none';
+      AJREV.open();
+    }
+    if(e.target && e.target.id === 'revCloseBtn'){
+      AJREV.close();
+    }
+  });
+
+  // Acciones
+  document.addEventListener('click', function(e){
+    if(e.target && e.target.id === 'revClearBtn'){ clearAll(); }
+    if(e.target && e.target.id === 'revCopyBtn'){
+      const lines = REV.events.map((ev,i)=> (i+1)+'. ['+ev.ts+'] '+ev.kind.toUpperCase() + (ev.note?(' — '+ev.note):''));
+      navigator.clipboard.writeText(lines.join('\n')).catch(()=>{});
+    }
+    if(e.target && e.target.id === 'revExportJsonBtn'){
+      const data = JSON.stringify({events:REV.events, counters: REV.counters}, null, 2);
+      exportText('ajetrez_revision.json', data);
+    }
+    if(e.target && e.target.id === 'revExportPgnBtn'){
+      exportText('ajetrez_revision.pgn', buildPGN());
+    }
+    if(e.target && e.target.id === 'revToggleImportBtn'){
+      ensureEls();
+      el.importArea.style.display = (el.importArea.style.display === 'block') ? 'none' : 'block';
+    }
+    if(e.target && e.target.id === 'revImportBtn'){
+      ensureEls();
+      importFromText(el.importText.value || '');
+    }
+    if(e.target && e.target.id === 'revImportClear'){
+      ensureEls();
+      el.importText.value = '';
+    }
+  });
+
+  // Integración: registrar eventos por sonidos si están disponibles
+  try{
+    const orig = window.playSfx;
+    if(typeof orig === 'function'){
+      window.playSfx = function(kind){
+        try{
+          if(kind === 'move' || kind === 'capture' || kind === 'shift'){
+            addEvent(kind, {});
+          }
+        }catch(e){}
+        return orig.apply(this, arguments);
+      }
+    }
+  }catch(e){}
+
+})();</script>
+
+
+</body>
 
 <style id="base-container-shrink-down-0_5square-2025-08-29">
 /* === Reducir el alto de la base contenedora del juego medio casillero, desde abajo (web y móvil) === */
 #board, #mobile-board, #mobile-board-down-1square{
   padding-bottom: calc(0.5 * var(--square)) !important;
-}
-</style>
+}</style>
 
 <style id="bottom-buttons-2mm-separation-2025-08-29">
 /* === Alinear los botones inferiores con separación de 2 mm desde la base inferior (web y móvil) === */
 #bottom-buttons, .bottom-buttons, #buttons-container, .buttons-container {
   margin-bottom: 2mm !important;
   bottom: 2mm !important;
-}
-</style>
+}</style>
 
 <style id="bottom-buttons-web-down-0_5square-2025-08-29">
 /* === Versión web: bajar los botones inferiores medio casillero === */
@@ -3710,8 +4341,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     margin-bottom: calc(0.5 * var(--square)) !important;
     bottom: calc(0.5 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 
 <style id="fix-bottom-buttons-2mm-gap-2025-08-29">
 /* ======= Corrección integral botones inferiores (web + móvil) =======
@@ -3776,16 +4406,14 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
 .frame, #game, #container, #root {
   /* no forzamos altura aquí; solo aseguramos que nada "tire" del footer */
   overflow: visible !important;
-}
-</style>
+}</style>
 
 <style id="floatingControls-left-1square-2025-08-29">
 /* === Desplazar los botones de Reiniciar y Pantalla completa 1 casillero a la izquierda (web + móvil) === */
 #floatingControls{
   position: relative !important;
   left: calc(-1 * var(--square)) !important;
-}
-</style>
+}</style>
 
 <style id="bottom-buttons-web-down-0_5square-2025-08-29">
 /* === Versión WEB: desplazar hacia abajo los botones inferiores medio casillero === */
@@ -3794,8 +4422,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     position: relative !important;
     top: calc(0.5 * var(--square)) !important;
   }
-}
-</style>
+}</style>
 
 <style id="bottom-buttons-web-3mm-gap-2025-08-29">
 /* === Versión WEB: dejar los botones inferiores con margen fijo de 3mm de separación === */
@@ -3805,8 +4432,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
     top: auto !important;
     margin-top: 3mm !important;
   }
-}
-</style>
+}</style>
 
 <style id="bottom-buttons-UNIFY-3mm-2025-08-29">
 /* === Unificación definitiva: margen único 3mm para la botonera inferior (web + móvil) ===
@@ -3838,8 +4464,7 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
 #donateBar{ margin-left: 0 !important; margin-right: 0 !important; }
 
 /* Seguridad: ningún margen inferior extra que “aleje” la botonera de la base */
-#baseFooter{ margin-bottom: 0 !important; }
-</style>
+#baseFooter{ margin-bottom: 0 !important; }</style>
 
 <style id="bottom-buttons-UNIFY-3mm-all-sides-2025-08-29">
 /* === Unificación definitiva de márgenes para botonera inferior ===
@@ -3866,6 +4491,18 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
   justify-content: space-between !important;
   gap: 8px !important;
   margin: 3mm !important;   /* separación única: 3mm en todos los lados */
-}
-</style>
+}</style>
 </html>
+<script>
+
+// === Resaltar dinámicamente las 8 columnas visibles (ventana 8×8) ===
+}
+  return best|0;
+}
+);
+    };
+    setActive(top); setActive(bottom);
+  }catch(_){}
+}
+
+</script>
