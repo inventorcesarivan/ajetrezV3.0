@@ -4509,6 +4509,42 @@ window.AJ_RULES.kingsInPlay = function(color, board, offsets){
 }
 </style>
 
+
+<style id="ajetrez-2025-08-30-fixes-14">
+/* === FIX 2025-08-30 (mover botón de menú de funciones 2 casilleros a la izquierda) === */
+#menuContainer{
+  position: absolute !important;
+  left: calc(-2 * var(--square)) !important;
+  top: auto !important;
+  transform: none !important;
+  z-index: 2147483000 !important;
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-15">
+/* === FIX 2025-08-30 (subir 0.5 casillero y mover 1 casillero a la derecha el menú de funciones) === */
+#menuContainer{
+  position: absolute !important;
+  top: calc(-0.5 * var(--square)) !important; /* medio casillero arriba */
+  left: calc(-1 * var(--square)) !important;  /* antes -2, ahora -1 (1 casillero más a la derecha) */
+  transform: none !important;
+  z-index: 2147483000 !important;
+}
+</style>
+
+
+<style id="ajetrez-2025-08-30-fixes-16">
+/* === FIX 2025-08-30 (subir 0.5 casillero más y mover 1 casillero más a la derecha el menú de funciones) === */
+#menuContainer{
+  position: absolute !important;
+  top: calc(-1 * var(--square)) !important;   /* sube total 1 casillero desde base */
+  left: calc(0 * var(--square)) !important;   /* total: centrado respecto a base (0) */
+  transform: none !important;
+  z-index: 2147483000 !important;
+}
+</style>
+
 </body>
 
 <style id="base-container-shrink-down-0_5square-2025-08-29">
