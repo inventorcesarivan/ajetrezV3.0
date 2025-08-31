@@ -242,6 +242,55 @@ body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto
   position: relative;
   top: 2mm !important;
 }
+
+
+
+
+/* Achicar ancho del contenedor y botones del menú desplegable */
+.toolbar {
+    max-width: 80% !important;   /* reduce ancho total del contenedor */
+    margin: 0 auto !important;   /* centra el menú */
+}
+
+.toolbar .btn, 
+.toolbar button {
+    padding: 6px 10px !important;
+    font-size: 0.9em !important;
+    min-width: 85px !important; /* ancho mínimo más reducido */
+}
+
+
+/* Bajar el botón de menú principal de funciones 3mm */
+.toolbar button:first-child {
+    position: relative !important;
+    top: 3mm !important;
+}
+
+
+/* Bajar el botón de menú principal de funciones 3mm y desplazar medio casillero a la izquierda */
+.toolbar button:first-child {
+    position: relative !important;
+    top: 3mm !important;
+    left: calc(-0.5 * var(--square)) !important;
+}
+
+/* En móvil aplicar también */
+@media (max-width:699px){
+  .toolbar button:first-child {
+      position: relative !important;
+      top: 3mm !important;
+      left: calc(-0.5 * var(--square)) !important;
+  }
+}
+
+
+/* === Ajuste explícito del botón "☰ Menú de funciones" en ambas versiones === */
+#menuToggle{
+  position: relative !important;
+  transform: translate(calc(-0.5 * var(--square)), 3mm) !important; /* medio casillero a la izquierda y 3mm abajo */
+  z-index: 2147482000 !important; /* asegurar que quede por encima si hay solapamientos */
+}
+
 </style>
 <style>
 /* 20% más chico el panel del instructivo */
@@ -707,7 +756,7 @@ function playSfx(kind){
 }
 #floatingControls .btn{
   width: auto !important;
-  min-width: 100px;
+  min-width: 85px;
   padding: 6px 10px !important;
   text-align: center !important;
 }</style>
